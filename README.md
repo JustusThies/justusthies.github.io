@@ -2,5 +2,5 @@ This website is based on Flexible-Jekyll
 
 ![](https://github.com/artemsheludko/flexible-jekyll/)
 
-## License of the source code 
+### License (exluding the images and text content)
 GNU General Public License v3.0
