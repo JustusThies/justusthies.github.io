@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Deferred Neural Rendering&#58; <br> Image Synthesis using Neural Textures - Justus Thies</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="Deferred Neural Rendering&#58; <br> Image Synthesis using Neural Textures" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Deferred Neural Rendering is a new paradigm for image synthesis that combines the traditional graphics pipeline with learnable Neural Textures. Both neural textures and deferred neural renderer are trained end-to-end, enabling us to synthesize photo-realistic images even when the original 3D content was imperfect." property="og:description">
+  
+  
+    <meta content="http://localhost:4000/posts/deferred-neural-rendering/" property="og:url">
+  
+  
+    <meta content="2019-04-28T11:00:00+02:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="highlight" property="article:section">
+    
+  
+  
+    
+    <meta content="SIGGRAPH" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="Deferred Neural Rendering&#58; <br> Image Synthesis using Neural Textures">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/posts/deferred-neural-rendering/">
+  
+  
+    <meta name="twitter:description" content="Deferred Neural Rendering is a new paradigm for image synthesis that combines the traditional graphics pipeline with learnable Neural Textures. Both neural textures and deferred neural renderer are trained end-to-end, enabling us to synthesize photo-realistic images even when the original 3D content was imperfect.">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="Deferred Neural Rendering is a new paradigm for image synthesis that combines the traditional graphics pipeline with learnable Neural Textures. Both neural textures and deferred neural renderer are trained end-to-end, enabling us to synthesize photo-realistic images even when the original 3D content was imperfect.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a postdoctoral researcher focusing on digital humans, video editing and forgery detection.</div>
+    </div>
+	
+
+	<section class="subpages">	
+		<a href="/publications"><div class="subpages-title">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title">Teaching</div></a>
+	</section>
+	
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tum.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2019 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		<h1 class="page-title">Deferred Neural Rendering&#58; <br> Image Synthesis using Neural Textures</h1>
+        <div class="page-date"><span>2019, Apr 28&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://zollhoefer.com" target="_blank" rel="noopener noreferrer">Michael Zollhöfer</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://niessnerlab.org" target="_blank" rel="noopener noreferrer">Matthias Nießner</a>&emsp;</span>
+						
+		
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="Deferred Neural Rendering&#58; <br> Image Synthesis using Neural Textures">-->
+			<img class="page-image" src=teaser.jpg alt="Deferred Neural Rendering&#58; <br> Image Synthesis using Neural Textures">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>The modern computer graphics pipeline can synthesize images at remarkable visual quality; however, it requires well-defined, high-quality 3D content as input.
+In this work, we explore the use of imperfect 3D content, for instance, obtained from photo-metric reconstructions with noisy and incomplete surface geometry, while still aiming to produce photo-realistic (re-)renderings.
+To address this challenging problem, we introduce Deferred Neural Rendering, a new paradigm for image synthesis that combines the traditional graphics pipeline with learnable components.
+Specifically, we propose Neural Textures, which are learned feature maps that are trained as part of the scene capture process.
+Similar to traditional textures, neural textures are stored as maps on top of 3D mesh proxies; however, the high-dimensional feature maps contain significantly more information, which can be interpreted by our new deferred neural rendering pipeline.
+Both neural textures and deferred neural renderer are trained end-to-end, enabling us to synthesize photo-realistic images even when the original 3D content was imperfect.
+In contrast to traditional, black-box 2D generative neural networks, our 3D representation gives us explicit control over the generated output, and allows for a wide range of application domains.
+For instance, we can synthesize temporally-consistent video re-renderings of recorded 3D scenes as our representation is inherently embedded in 3D space.
+This way, neural textures can be utilized to coherently re-render or manipulate existing video content in both static and dynamic environments at real-time rates.
+We show the effectiveness of our approach in several experiments on novel view synthesis, scene editing, and facial reenactment, and compare to state-of-the-art approaches that leverage the standard graphics pipeline as well as conventional generative neural networks.</p>
+
+	  
+	  
+		
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/1904.12356.pdf" target="_blank">[Paper]</a>&nbsp;</span>
+			
+		
+			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=z-pVip6WeyY" target="_blank">[Video]</a>&nbsp;</span>
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/deferred-neural-rendering/thies2019neural.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+		
+		<iframe width="898" height="505" src=https://www.youtube.com/embed/z-pVip6WeyY frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="page-cover-image">
+		</div> <!-- End Page Cover Image -->
+		
+	  
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Deferred Neural Rendering&#58; <br> Image Synthesis using Neural Textures&url=http://localhost:4000/posts/deferred-neural-rendering/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/deferred-neural-rendering/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/posts/deferred-neural-rendering/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#SIGGRAPH" class="tag">&#35; SIGGRAPH</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>

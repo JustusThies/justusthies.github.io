@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-14T22:53:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Justus Thies</title><subtitle>Personal Website of Justus Thies covering his publications and teaching courses.
+</subtitle><author><name>Justus Thies</name></author><entry><title type="html">Lecture: 3D Scanning and Motion Capture</title><link href="http://localhost:4000/posts/3D-Scanning-and-Motion-Capture-WS19-20/" rel="alternate" type="text/html" title="Lecture&amp;#58; 3D Scanning and Motion Capture" /><published>2019-10-10T23:00:00+02:00</published><updated>2019-10-10T23:00:00+02:00</updated><id>http://localhost:4000/posts/3D-Scanning-and-Motion-Capture-WS19-20</id><content type="html" xml:base="http://localhost:4000/posts/3D-Scanning-and-Motion-Capture-WS19-20/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+&lt;p&gt;3D reconstruction, RGB-D scanning (Kinect, Tango, RealSense), ICP, camera tracking, sensor calibration, VolumetricFusion, Non-Rigid Registration, PoseTracking, Motion Capture, Body-, Face-, and Hand-Tracking, 3D DeepLearning, selected optimization techniques to solve the problem statements (GN, LM, gradient descent).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Basic concepts of geometry
+    &lt;ul&gt;
+      &lt;li&gt;Meshes (polygonal), Point Clouds, Pixels &amp;amp; Voxels&lt;/li&gt;
+      &lt;li&gt;RGB and Depth Cameras&lt;/li&gt;
+      &lt;li&gt;Extrinsics and Intrinsics&lt;/li&gt;
+      &lt;li&gt;Capture devices&lt;/li&gt;
+      &lt;li&gt;RGB and Multi-view&lt;/li&gt;
+      &lt;li&gt;RGB-D cameras&lt;/li&gt;
+      &lt;li&gt;Stereo&lt;/li&gt;
+      &lt;li&gt;Time of Flight (ToF)&lt;/li&gt;
+      &lt;li&gt;Structured Light&lt;/li&gt;
+      &lt;li&gt;Laser Scanner, Lidar&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Surface Representations
+    &lt;ul&gt;
+      &lt;li&gt;Polygonal meshes (trimeshes, etc.)&lt;/li&gt;
+      &lt;li&gt;Parametric surfaces: splines, nurbs&lt;/li&gt;
+      &lt;li&gt;Implicit surfaces&lt;/li&gt;
+      &lt;li&gt;Ridge-based surfaces&lt;/li&gt;
+      &lt;li&gt;Radial basis functions&lt;/li&gt;
+      &lt;li&gt;Signed distance functions (volumetric, Curless &amp;amp; Levoy)&lt;/li&gt;
+      &lt;li&gt;Indicator function (Poisson Surface Reconstruction)&lt;/li&gt;
+      &lt;li&gt;More general: level sets&lt;/li&gt;
+      &lt;li&gt;Marching cubes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;High-level overview of reconstructions
+    &lt;ul&gt;
+      &lt;li&gt;Structure from Motion (SfM)&lt;/li&gt;
+      &lt;li&gt;Multi-view Stereo (MVS)&lt;/li&gt;
+      &lt;li&gt;SLAM&lt;/li&gt;
+      &lt;li&gt;Bundle Adjustment&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Optimization
+    &lt;ul&gt;
+      &lt;li&gt;Non-linear least squares&lt;/li&gt;
+      &lt;li&gt;Gauss-Newton LM&lt;/li&gt;
+      &lt;li&gt;Examples in Ceres&lt;/li&gt;
+      &lt;li&gt;Symbolic diff vs auto-diff&lt;/li&gt;
+      &lt;li&gt;Auto-diff with dual numbers&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rigid Surface Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Pose alignment&lt;/li&gt;
+      &lt;li&gt;ICP (point cloud alignment; depth-to-model alignment; rigid ‘fitting’)&lt;/li&gt;
+      &lt;li&gt;Online surface reconstruction pipeline: KinectFusion&lt;/li&gt;
+      &lt;li&gt;Scalable surface representations: VoxelHashing, OctTrees&lt;/li&gt;
+      &lt;li&gt;Loop closures and global optimization&lt;/li&gt;
+      &lt;li&gt;Robust optimization&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Non-rigid Surface Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Surface deformation for modeling&lt;/li&gt;
+      &lt;li&gt;Regularizers: ARAP, ED, etc.&lt;/li&gt;
+      &lt;li&gt;Non-rigid surface fitting: e.g., non-rigid ICP&lt;/li&gt;
+      &lt;li&gt;Non-rigid reconstruction: DynamicFusion/VolumeDeform/KillingFusion&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Body Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Skeleton Tracking and Inverse Kinematics&lt;/li&gt;
+      &lt;li&gt;Learning-based approaches from RGB and RGB-D&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Face Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Keypoint detection &amp;amp; tracking&lt;/li&gt;
+      &lt;li&gt;Parametric / Statistical Models -&amp;gt; BlendShapes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hand Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Parametric Models&lt;/li&gt;
+      &lt;li&gt;Some DeepLearning-based things&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discriminative vs generative tracking
+    &lt;ul&gt;
+      &lt;li&gt;Random forests&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Motion Capture in Movies
+    &lt;ul&gt;
+      &lt;li&gt;Marker-based motion capture&lt;/li&gt;
+      &lt;li&gt;LightStage -&amp;gt; movies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BRDF and Material Capture&lt;/li&gt;
+  &lt;li&gt;Open research questions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Introduction to Informatics I, Analysis, Linear Algebra, Computer Graphics, C++&lt;/p&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content 3D reconstruction, RGB-D scanning (Kinect, Tango, RealSense), ICP, camera tracking, sensor calibration, VolumetricFusion, Non-Rigid Registration, PoseTracking, Motion Capture, Body-, Face-, and Hand-Tracking, 3D DeepLearning, selected optimization techniques to solve the problem statements (GN, LM, gradient descent).</summary></entry><entry><title type="html">Practical Course: 3D Scanning and Spatial Learning</title><link href="http://localhost:4000/posts/3D-Scanning-and-Spatial-Learning-WS19-20/" rel="alternate" type="text/html" title="Practical Course&amp;#58; 3D Scanning and Spatial Learning" /><published>2019-10-07T23:00:00+02:00</published><updated>2019-10-07T23:00:00+02:00</updated><id>http://localhost:4000/posts/3D-Scanning-and-Spatial-Learning-WS19-20</id><content type="html" xml:base="http://localhost:4000/posts/3D-Scanning-and-Spatial-Learning-WS19-20/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+&lt;p&gt;3D scanning and motion capture is of paramount importance for content creation, man-machine as well as machine-environment interaction. In this course we will continue the topics covered by the 3D Scanning &amp;amp; Motion Capture as well as by the Introduction to Deep Learning lecture.
+In the spirit of ‘learning by doing’ the students are asked to implement state-of-the-art reconstruction methods or current research topics in the field.
+Specifically, we will have projects on:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;human motion capturing (e.g., Fusion4D, BodyFusion)&lt;/li&gt;
+  &lt;li&gt;real-time facial motion capturing (spare and dense approaches)&lt;/li&gt;
+  &lt;li&gt;3D scene reconstruction (e.g., BundleFusion)&lt;/li&gt;
+  &lt;li&gt;scan refinement (e.g., ShapeFromShading)&lt;/li&gt;
+  &lt;li&gt;neural rendering of 3D content (e.g., DeepVoxel, NeuralRendering)&lt;/li&gt;
+  &lt;li&gt;scene completion (e.g., ScanComplete)&lt;/li&gt;
+  &lt;li&gt;3D object retrieval and alignment (e.g., Scan2CAD)&lt;/li&gt;
+  &lt;li&gt;scene understanding, instance segmentation (e.g., ScanNet, 3D-SIS)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;objective&quot;&gt;Objective&lt;/h3&gt;
+&lt;p&gt;Upon completion of this module, students will have acquired extensive theoretical concepts behind state-of-the art 3D reconstruction methods, in particular in the context of human motion capturing, static object scanning, scene understanding and synthesis of captured scenes. Besides the theoretical foundations, a significant aspect lies on the practical realization and implementation of such algorithms.&lt;/p&gt;
+
+&lt;h3 id=&quot;organization&quot;&gt;Organization&lt;/h3&gt;
+&lt;p&gt;In the practical course students shall get familiar with state-of-the-art 3D scanning. They will be assisted by current PhD students working in this field (regular office hours). To ensure a good progress during the semester, we will have mandatory meetings (every two weeks) where the students report their current state. In the end of the course, the students are asked to give a talk about their project and results.&lt;/p&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Introduction to Informatics I, Analysis, Linear Algebra, Computer Graphics, 3D scanning &amp;amp; Motion Capture, Introduction to Deep Learning, C++&lt;/p&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content 3D scanning and motion capture is of paramount importance for content creation, man-machine as well as machine-environment interaction. In this course we will continue the topics covered by the 3D Scanning &amp;amp; Motion Capture as well as by the Introduction to Deep Learning lecture. In the spirit of ‘learning by doing’ the students are asked to implement state-of-the-art reconstruction methods or current research topics in the field. Specifically, we will have projects on: human motion capturing (e.g., Fusion4D, BodyFusion) real-time facial motion capturing (spare and dense approaches) 3D scene reconstruction (e.g., BundleFusion) scan refinement (e.g., ShapeFromShading) neural rendering of 3D content (e.g., DeepVoxel, NeuralRendering) scene completion (e.g., ScanComplete) 3D object retrieval and alignment (e.g., Scan2CAD) scene understanding, instance segmentation (e.g., ScanNet, 3D-SIS)</summary></entry><entry><title type="html">Seminar: 3D Vision</title><link href="http://localhost:4000/posts/3D-Vision-WS19-20/" rel="alternate" type="text/html" title="Seminar&amp;#58; 3D Vision" /><published>2019-10-07T23:00:00+02:00</published><updated>2019-10-07T23:00:00+02:00</updated><id>http://localhost:4000/posts/3D-Vision-WS19-20</id><content type="html" xml:base="http://localhost:4000/posts/3D-Vision-WS19-20/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+&lt;p&gt;In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).&lt;/p&gt;
+
+&lt;p&gt;The talks have to cover the following topics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;face tracking / reconstruction&lt;/li&gt;
+  &lt;li&gt;facial reenactment (audio driven, video driven animation)&lt;/li&gt;
+  &lt;li&gt;body tracking / reconstruction&lt;/li&gt;
+  &lt;li&gt;hand tracking&lt;/li&gt;
+  &lt;li&gt;static / dynamic scene reconstruction&lt;/li&gt;
+  &lt;li&gt;scene understanding&lt;/li&gt;
+  &lt;li&gt;inverse rendering, material estimation, light estimation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;organization--requirements&quot;&gt;Organization / Requirements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lecture: 3D Scanning &amp;amp; Motion Capturing&lt;/li&gt;
+  &lt;li&gt;The participants have to present their topics in a talk (in English), which should last 30 minutes.&lt;/li&gt;
+  &lt;li&gt;The semi-final slides (PDF) should be sent one week before the talk; otherwise, the talk will be canceled.&lt;/li&gt;
+  &lt;li&gt;A short report (approximately 2-3 pages in the ACM SIGGRAPH TOG format (acmtog)) should be prepared and sent within two weeks after the talk. When you send the report, please send the final slides (PDF) together.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).</summary></entry><entry><title type="html">FaceForensics++: Learning to Detect Manipulated Facial Images</title><link href="http://localhost:4000/posts/faceforensics++/" rel="alternate" type="text/html" title="FaceForensics++&amp;#58; &lt;br&gt; Learning to Detect Manipulated Facial Images" /><published>2019-08-26T11:00:00+02:00</published><updated>2019-08-26T11:00:00+02:00</updated><id>http://localhost:4000/posts/faceforensics++</id><content type="html" xml:base="http://localhost:4000/posts/faceforensics++/">&lt;p&gt;The rapid progress in synthetic image generation and manipulation has now come to a point where it raises significant concerns for the implications towards society. At best, this leads to a loss of trust in digital content, but could potentially cause further harm by spreading false information or fake news. This paper examines the realism of state-of-the-art image manipulations, and how difficult it is to detect them, either automatically or by humans. To standardize the evaluation of detection methods, we propose an automated benchmark for facial manipulation detection. In particular, the benchmark is based on DeepFakes, Face2Face, FaceSwap and NeuralTextures as prominent representatives for facial manipulations at random compression level and size. The benchmark is publicly available and contains a hidden test set as well as a database of over 1.8 million manipulated images. This dataset is over an order of magnitude larger than comparable, publicly available, forgery datasets. Based on this data, we performed a thorough analysis of data-driven forgery detectors. We show that the use of additional domain specific knowledge improves forgery detection to unprecedented accuracy, even in the presence of strong compression, and clearly outperforms human observers.&lt;/p&gt;
+
+&lt;h2 id=&quot;dataset-access&quot;&gt;Dataset Access&lt;/h2&gt;
+&lt;p&gt;If you would like to download the FaceForensics and FaceForensics++ datasets, please fill out this &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdRRR3L5zAv6tQ_CKxmK4W96tAab_pfBu2EKAgQbeDVhmXagg/viewform&quot;&gt;google form&lt;/a&gt; and, once accepted, we will send you the link to our download script.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Update:&lt;/b&gt; We are also hosting the DeepFakes Detection Dataset which includes various high quality scenes of multiple actors which have been manipulated using DeepFakes. The dataset was donated by Google/Jigsaw to support the community effort on detecting manipulated faces. To obtain this dataset please use the google form provided above.&lt;/p&gt;
+
+&lt;h2 id=&quot;benchmark&quot;&gt;Benchmark&lt;/h2&gt;
+&lt;p&gt;We are offering an automated benchmark for facial manipulation detection on the presence of compression based on our manipulation methods. If you are interested to test your approach on unseen data, visit it &lt;a href=&quot;http://kaldir.vc.in.tum.de/faceforensics_benchmark/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;source-code--contact&quot;&gt;Source Code &amp;amp; Contact&lt;/h2&gt;
+&lt;p&gt;For more information about our code, visit our &lt;a href=&quot;https://github.com/ondyari/FaceForensics&quot;&gt;github&lt;/a&gt; or contact us under &lt;a href=&quot;mailto:faceforensics@googlegroups.com&quot;&gt;faceforensics@googlegroups.com&lt;/a&gt;.&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Andreas R\u00F6ssler&quot;, &quot;website_link&quot;=&gt;&quot;http://niessnerlab.org/members/andreas_roessler/profile.html&quot;}</name></author><category term="ICCV" /><summary type="html">The rapid progress in synthetic image generation and manipulation has now come to a point where it raises significant concerns for the implications towards society. At best, this leads to a loss of trust in digital content, but could potentially cause further harm by spreading false information or fake news. This paper examines the realism of state-of-the-art image manipulations, and how difficult it is to detect them, either automatically or by humans. To standardize the evaluation of detection methods, we propose an automated benchmark for facial manipulation detection. In particular, the benchmark is based on DeepFakes, Face2Face, FaceSwap and NeuralTextures as prominent representatives for facial manipulations at random compression level and size. The benchmark is publicly available and contains a hidden test set as well as a database of over 1.8 million manipulated images. This dataset is over an order of magnitude larger than comparable, publicly available, forgery datasets. Based on this data, we performed a thorough analysis of data-driven forgery detectors. We show that the use of additional domain specific knowledge improves forgery detection to unprecedented accuracy, even in the presence of strong compression, and clearly outperforms human observers.</summary></entry><entry><title type="html">Deferred Neural Rendering: Image Synthesis using Neural Textures</title><link href="http://localhost:4000/posts/deferred-neural-rendering/" rel="alternate" type="text/html" title="Deferred Neural Rendering&amp;#58; &lt;br&gt; Image Synthesis using Neural Textures" /><published>2019-04-28T11:00:00+02:00</published><updated>2019-04-28T11:00:00+02:00</updated><id>http://localhost:4000/posts/deferred-neural-rendering</id><content type="html" xml:base="http://localhost:4000/posts/deferred-neural-rendering/">&lt;p&gt;The modern computer graphics pipeline can synthesize images at remarkable visual quality; however, it requires well-defined, high-quality 3D content as input.
+In this work, we explore the use of imperfect 3D content, for instance, obtained from photo-metric reconstructions with noisy and incomplete surface geometry, while still aiming to produce photo-realistic (re-)renderings.
+To address this challenging problem, we introduce Deferred Neural Rendering, a new paradigm for image synthesis that combines the traditional graphics pipeline with learnable components.
+Specifically, we propose Neural Textures, which are learned feature maps that are trained as part of the scene capture process.
+Similar to traditional textures, neural textures are stored as maps on top of 3D mesh proxies; however, the high-dimensional feature maps contain significantly more information, which can be interpreted by our new deferred neural rendering pipeline.
+Both neural textures and deferred neural renderer are trained end-to-end, enabling us to synthesize photo-realistic images even when the original 3D content was imperfect.
+In contrast to traditional, black-box 2D generative neural networks, our 3D representation gives us explicit control over the generated output, and allows for a wide range of application domains.
+For instance, we can synthesize temporally-consistent video re-renderings of recorded 3D scenes as our representation is inherently embedded in 3D space.
+This way, neural textures can be utilized to coherently re-render or manipulate existing video content in both static and dynamic environments at real-time rates.
+We show the effectiveness of our approach in several experiments on novel view synthesis, scene editing, and facial reenactment, and compare to state-of-the-art approaches that leverage the standard graphics pipeline as well as conventional generative neural networks.&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Justus Thies&quot;, &quot;website_link&quot;=&gt;&quot;/&quot;}</name></author><category term="SIGGRAPH" /><summary type="html">The modern computer graphics pipeline can synthesize images at remarkable visual quality; however, it requires well-defined, high-quality 3D content as input. In this work, we explore the use of imperfect 3D content, for instance, obtained from photo-metric reconstructions with noisy and incomplete surface geometry, while still aiming to produce photo-realistic (re-)renderings. To address this challenging problem, we introduce Deferred Neural Rendering, a new paradigm for image synthesis that combines the traditional graphics pipeline with learnable components. Specifically, we propose Neural Textures, which are learned feature maps that are trained as part of the scene capture process. Similar to traditional textures, neural textures are stored as maps on top of 3D mesh proxies; however, the high-dimensional feature maps contain significantly more information, which can be interpreted by our new deferred neural rendering pipeline. Both neural textures and deferred neural renderer are trained end-to-end, enabling us to synthesize photo-realistic images even when the original 3D content was imperfect. In contrast to traditional, black-box 2D generative neural networks, our 3D representation gives us explicit control over the generated output, and allows for a wide range of application domains. For instance, we can synthesize temporally-consistent video re-renderings of recorded 3D scenes as our representation is inherently embedded in 3D space. This way, neural textures can be utilized to coherently re-render or manipulate existing video content in both static and dynamic environments at real-time rates. We show the effectiveness of our approach in several experiments on novel view synthesis, scene editing, and facial reenactment, and compare to state-of-the-art approaches that leverage the standard graphics pipeline as well as conventional generative neural networks.</summary></entry><entry><title type="html">DeepVoxels: Learning Persistent 3D Feature Embeddings</title><link href="http://localhost:4000/posts/deepvoxels/" rel="alternate" type="text/html" title="DeepVoxels&amp;#58; Learning Persistent 3D Feature Embeddings" /><published>2019-04-11T11:00:00+02:00</published><updated>2019-04-11T11:00:00+02:00</updated><id>http://localhost:4000/posts/deepvoxels</id><content type="html" xml:base="http://localhost:4000/posts/deepvoxels/">&lt;p&gt;In this work, we address the lack of 3D understanding of generative neural networks by introducing a persistent 3D feature embedding for view synthesis.
+To this end, we propose DeepVoxels, a learned representation that encodes the view-dependent appearance of a 3D object without having to explicitly model its geometry.
+At its core, our approach is based on a Cartesian 3D grid of persistent embedded features that learn to make use of the underlying 3D scene structure.
+Our approach thus combines insights from 3D geometric computer vision with recent advances in learning image-to-image mappings based on adversarial loss functions.
+DeepVoxels is supervised, without requiring a 3D reconstruction of the scene, using a 2D re-rendering loss and enforces perspective and multi-view geometry in a principled manner.
+We apply our persistent 3D scene representation to the problem of novel view synthesis demonstrating high-quality results for a variety of challenging objects.&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Vincent Sitzmann&quot;, &quot;website_link&quot;=&gt;&quot;https://vsitzmann.github.io/&quot;}</name></author><category term="CVPR" /><summary type="html">In this work, we address the lack of 3D understanding of generative neural networks by introducing a persistent 3D feature embedding for view synthesis. To this end, we propose DeepVoxels, a learned representation that encodes the view-dependent appearance of a 3D object without having to explicitly model its geometry. At its core, our approach is based on a Cartesian 3D grid of persistent embedded features that learn to make use of the underlying 3D scene structure. Our approach thus combines insights from 3D geometric computer vision with recent advances in learning image-to-image mappings based on adversarial loss functions. DeepVoxels is supervised, without requiring a 3D reconstruction of the scene, using a 2D re-rendering loss and enforces perspective and multi-view geometry in a principled manner. We apply our persistent 3D scene representation to the problem of novel view synthesis demonstrating high-quality results for a variety of challenging objects.</summary></entry><entry><title type="html">Lecture: 3D Scanning and Motion Capture</title><link href="http://localhost:4000/posts/3D-Scanning-and-Motion-Capture-SS19/" rel="alternate" type="text/html" title="Lecture&amp;#58; 3D Scanning and Motion Capture" /><published>2019-04-10T23:00:00+02:00</published><updated>2019-04-10T23:00:00+02:00</updated><id>http://localhost:4000/posts/3D-Scanning-and-Motion-Capture-SS19</id><content type="html" xml:base="http://localhost:4000/posts/3D-Scanning-and-Motion-Capture-SS19/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+&lt;p&gt;3D reconstruction, RGB-D scanning (Kinect, Tango, RealSense), ICP, camera tracking, sensor calibration, VolumetricFusion, Non-Rigid Registration, PoseTracking, Motion Capture, Body-, Face-, and Hand-Tracking, 3D DeepLearning, selected optimization techniques to solve the problem statements (GN, LM, gradient descent).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Basic concepts of geometry
+    &lt;ul&gt;
+      &lt;li&gt;Meshes (polygonal), Point Clouds, Pixels &amp;amp; Voxels&lt;/li&gt;
+      &lt;li&gt;RGB and Depth Cameras&lt;/li&gt;
+      &lt;li&gt;Extrinsics and Intrinsics&lt;/li&gt;
+      &lt;li&gt;Capture devices&lt;/li&gt;
+      &lt;li&gt;RGB and Multi-view&lt;/li&gt;
+      &lt;li&gt;RGB-D cameras&lt;/li&gt;
+      &lt;li&gt;Stereo&lt;/li&gt;
+      &lt;li&gt;Time of Flight (ToF)&lt;/li&gt;
+      &lt;li&gt;Structured Light&lt;/li&gt;
+      &lt;li&gt;Laser Scanner, Lidar&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Surface Representations
+    &lt;ul&gt;
+      &lt;li&gt;Polygonal meshes (trimeshes, etc.)&lt;/li&gt;
+      &lt;li&gt;Parametric surfaces: splines, nurbs&lt;/li&gt;
+      &lt;li&gt;Implicit surfaces&lt;/li&gt;
+      &lt;li&gt;Ridge-based surfaces&lt;/li&gt;
+      &lt;li&gt;Radial basis functions&lt;/li&gt;
+      &lt;li&gt;Signed distance functions (volumetric, Curless &amp;amp; Levoy)&lt;/li&gt;
+      &lt;li&gt;Indicator function (Poisson Surface Reconstruction)&lt;/li&gt;
+      &lt;li&gt;More general: level sets&lt;/li&gt;
+      &lt;li&gt;Marching cubes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;High-level overview of reconstructions
+    &lt;ul&gt;
+      &lt;li&gt;Structure from Motion (SfM)&lt;/li&gt;
+      &lt;li&gt;Multi-view Stereo (MVS)&lt;/li&gt;
+      &lt;li&gt;SLAM&lt;/li&gt;
+      &lt;li&gt;Bundle Adjustment&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Optimization
+    &lt;ul&gt;
+      &lt;li&gt;Non-linear least squares&lt;/li&gt;
+      &lt;li&gt;Gauss-Newton LM&lt;/li&gt;
+      &lt;li&gt;Examples in Ceres&lt;/li&gt;
+      &lt;li&gt;Symbolic diff vs auto-diff&lt;/li&gt;
+      &lt;li&gt;Auto-diff with dual numbers&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Rigid Surface Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Pose alignment&lt;/li&gt;
+      &lt;li&gt;ICP (point cloud alignment; depth-to-model alignment; rigid ‘fitting’)&lt;/li&gt;
+      &lt;li&gt;Online surface reconstruction pipeline: KinectFusion&lt;/li&gt;
+      &lt;li&gt;Scalable surface representations: VoxelHashing, OctTrees&lt;/li&gt;
+      &lt;li&gt;Loop closures and global optimization&lt;/li&gt;
+      &lt;li&gt;Robust optimization&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Non-rigid Surface Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Surface deformation for modeling&lt;/li&gt;
+      &lt;li&gt;Regularizers: ARAP, ED, etc.&lt;/li&gt;
+      &lt;li&gt;Non-rigid surface fitting: e.g., non-rigid ICP&lt;/li&gt;
+      &lt;li&gt;Non-rigid reconstruction: DynamicFusion/VolumeDeform/KillingFusion&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Body Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Skeleton Tracking and Inverse Kinematics&lt;/li&gt;
+      &lt;li&gt;Learning-based approaches from RGB and RGB-D&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Face Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Keypoint detection &amp;amp; tracking&lt;/li&gt;
+      &lt;li&gt;Parametric / Statistical Models -&amp;gt; BlendShapes&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Hand Tracking &amp;amp; Reconstruction
+    &lt;ul&gt;
+      &lt;li&gt;Parametric Models&lt;/li&gt;
+      &lt;li&gt;Some DeepLearning-based things&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Discriminative vs generative tracking
+    &lt;ul&gt;
+      &lt;li&gt;Random forests&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Motion Capture in Movies
+    &lt;ul&gt;
+      &lt;li&gt;Marker-based motion capture&lt;/li&gt;
+      &lt;li&gt;LightStage -&amp;gt; movies&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;BRDF and Material Capture&lt;/li&gt;
+  &lt;li&gt;Open research questions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
+&lt;p&gt;Introduction to Informatics I, Analysis, Linear Algebra, Computer Graphics, C++&lt;/p&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content 3D reconstruction, RGB-D scanning (Kinect, Tango, RealSense), ICP, camera tracking, sensor calibration, VolumetricFusion, Non-Rigid Registration, PoseTracking, Motion Capture, Body-, Face-, and Hand-Tracking, 3D DeepLearning, selected optimization techniques to solve the problem statements (GN, LM, gradient descent).</summary></entry><entry><title type="html">Seminar: 3D Vision</title><link href="http://localhost:4000/posts/3D-Vision-SS19/" rel="alternate" type="text/html" title="Seminar&amp;#58; 3D Vision" /><published>2019-04-07T23:00:00+02:00</published><updated>2019-04-07T23:00:00+02:00</updated><id>http://localhost:4000/posts/3D-Vision-SS19</id><content type="html" xml:base="http://localhost:4000/posts/3D-Vision-SS19/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+&lt;p&gt;In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).&lt;/p&gt;
+
+&lt;p&gt;The talks have to cover the following topics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;face tracking / reconstruction&lt;/li&gt;
+  &lt;li&gt;facial reenactment (audio driven, video driven animation)&lt;/li&gt;
+  &lt;li&gt;body tracking / reconstruction&lt;/li&gt;
+  &lt;li&gt;hand tracking&lt;/li&gt;
+  &lt;li&gt;static / dynamic scene reconstruction&lt;/li&gt;
+  &lt;li&gt;scene understanding&lt;/li&gt;
+  &lt;li&gt;inverse rendering, material estimation, light estimation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;organization--requirements&quot;&gt;Organization / Requirements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lecture: 3D Scanning &amp;amp; Motion Capturing&lt;/li&gt;
+  &lt;li&gt;The participants have to present their topics in a talk (in English), which should last 30 minutes.&lt;/li&gt;
+  &lt;li&gt;The semi-final slides (PDF) should be sent one week before the talk; otherwise, the talk will be canceled.&lt;/li&gt;
+  &lt;li&gt;A short report (approximately 2-3 pages in the ACM SIGGRAPH TOG format (acmtog)) should be prepared and sent within two weeks after the talk. When you send the report, please send the final slides (PDF) together.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).</summary></entry><entry><title type="html">Research Highlight: Face2Face</title><link href="http://localhost:4000/posts/acm-research-highlight/" rel="alternate" type="text/html" title="Research Highlight&amp;#58; Face2Face" /><published>2019-01-01T10:00:00+01:00</published><updated>2019-01-01T10:00:00+01:00</updated><id>http://localhost:4000/posts/acm-research-highlight</id><content type="html" xml:base="http://localhost:4000/posts/acm-research-highlight/">&lt;p&gt;Face2Face is an approach for real-time facial reenactment of a monocular target video sequence (e.g., Youtube video). The source sequence is also a monocular video stream, captured live with a commodity webcam. Our goal is to animate the facial expressions of the target video by a source actor and re-render the manipulated output video in a photo-realistic fashion. To this end, we first address the under-constrained problem of facial identity recovery from monocular video by non-rigid model-based bundling. At run time, we track facial expressions of both source and target video using a dense photometric consistency measure. Reenactment is then achieved by fast and efficient deformation transfer between source and target. The mouth interior that best matches the re-targeted expression is retrieved from the target sequence and warped to produce an accurate fit. Finally, we convincingly re-render the synthesized target face on top of the corresponding video stream such that it seamlessly blends with the real-world illumination. We demonstrate our method in a live setup, where Youtube videos are reenacted in real time. This live setup has also been shown at SIGGRAPH Emerging Technologies 2016 where it won the Best in Show Award.&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Justus Thies&quot;, &quot;website_link&quot;=&gt;&quot;/&quot;}</name></author><category term="Research Highlight" /><summary type="html">Face2Face is an approach for real-time facial reenactment of a monocular target video sequence (e.g., Youtube video). The source sequence is also a monocular video stream, captured live with a commodity webcam. Our goal is to animate the facial expressions of the target video by a source actor and re-render the manipulated output video in a photo-realistic fashion. To this end, we first address the under-constrained problem of facial identity recovery from monocular video by non-rigid model-based bundling. At run time, we track facial expressions of both source and target video using a dense photometric consistency measure. Reenactment is then achieved by fast and efficient deformation transfer between source and target. The mouth interior that best matches the re-targeted expression is retrieved from the target sequence and warped to produce an accurate fit. Finally, we convincingly re-render the synthesized target face on top of the corresponding video stream such that it seamlessly blends with the real-world illumination. We demonstrate our method in a live setup, where Youtube videos are reenacted in real time. This live setup has also been shown at SIGGRAPH Emerging Technologies 2016 where it won the Best in Show Award.</summary></entry><entry><title type="html">ForensicTransfer: Weakly-supervised Domain Adaptation for Forgery Detection</title><link href="http://localhost:4000/posts/forensictransfer/" rel="alternate" type="text/html" title="ForensicTransfer&amp;#58; Weakly-supervised Domain Adaptation for Forgery Detection" /><published>2018-12-06T10:00:00+01:00</published><updated>2018-12-06T10:00:00+01:00</updated><id>http://localhost:4000/posts/forensictransfer</id><content type="html" xml:base="http://localhost:4000/posts/forensictransfer/">&lt;p&gt;Distinguishing fakes from real images is becoming increasingly difficult as new sophisticated image manipulation approaches come out by the day.
+Convolutional neural networks (CNN) show excellent performance in detecting image manipulations when they are trained on a specific forgery method.
+However, on examples from unseen manipulation approaches, their performance drops significantly. To address this limitation in transferability, we introduce ForensicTransfer.
+ForensicTransfer tackles two challenges in multimedia forensics.
+First, we devise a learning-based forensic detector which adapts well to new domains, i.e., novel manipulation methods. Second we handle scenarios where only a handful of fake examples are available during training.
+To this end, we learn a forensic embedding that can be used to distinguish between real and fake imagery.
+We are using a new autoencoder-based architecture which enforces activations in different parts of a latent vector for the real and fake classes.
+Together with the constraint of correct reconstruction this ensures that the latent space keeps all the relevant information about the nature of the image.
+Therefore, the learned embedding acts as a form of anomaly detector; namely, an image manipulated from an unseen method will be detected as fake provided it maps sufficiently far away from the cluster of real images.
+Comparing with prior works, ForensicTransfer shows significant improvements in transferability, which we demonstrate in a series of experiments on cutting-edge benchmarks.
+For instance, on unseen examples, we achieve up to 80-85% in terms of accuracy compared to 50-59%, and with only a handful of seen examples, our performance already reaches around 95%.&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Davide Cozzolino&quot;, &quot;website_link&quot;=&gt;&quot;http://www.grip.unina.it/people/userprofile/davide_cozzolino.html&quot;}</name></author><category term="ArXiv" /><summary type="html">Distinguishing fakes from real images is becoming increasingly difficult as new sophisticated image manipulation approaches come out by the day. Convolutional neural networks (CNN) show excellent performance in detecting image manipulations when they are trained on a specific forgery method. However, on examples from unseen manipulation approaches, their performance drops significantly. To address this limitation in transferability, we introduce ForensicTransfer. ForensicTransfer tackles two challenges in multimedia forensics. First, we devise a learning-based forensic detector which adapts well to new domains, i.e., novel manipulation methods. Second we handle scenarios where only a handful of fake examples are available during training. To this end, we learn a forensic embedding that can be used to distinguish between real and fake imagery. We are using a new autoencoder-based architecture which enforces activations in different parts of a latent vector for the real and fake classes. Together with the constraint of correct reconstruction this ensures that the latent space keeps all the relevant information about the nature of the image. Therefore, the learned embedding acts as a form of anomaly detector; namely, an image manipulated from an unseen method will be detected as fake provided it maps sufficiently far away from the cluster of real images. Comparing with prior works, ForensicTransfer shows significant improvements in transferability, which we demonstrate in a series of experiments on cutting-edge benchmarks. For instance, on unseen examples, we achieve up to 80-85% in terms of accuracy compared to 50-59%, and with only a handful of seen examples, our performance already reaches around 95%.</summary></entry></feed>

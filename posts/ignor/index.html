@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>IGNOR&#58; Image-guided Neural Object Rendering - Justus Thies</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="IGNOR&#58; Image-guided Neural Object Rendering" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="We propose a new learning-based novel view synthesis approach for scanned objects that is trained based on a set of multi-view images, where we directly train a deep neural network to synthesize a view-dependent image of an object." property="og:description">
+  
+  
+    <meta content="http://localhost:4000/posts/ignor/" property="og:url">
+  
+  
+    <meta content="2018-11-26T10:00:00+01:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="publication" property="article:section">
+    
+  
+  
+    
+    <meta content="ArXiv" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="IGNOR&#58; Image-guided Neural Object Rendering">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/posts/ignor/">
+  
+  
+    <meta name="twitter:description" content="We propose a new learning-based novel view synthesis approach for scanned objects that is trained based on a set of multi-view images, where we directly train a deep neural network to synthesize a view-dependent image of an object.">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="We propose a new learning-based novel view synthesis approach for scanned objects that is trained based on a set of multi-view images, where we directly train a deep neural network to synthesize a view-dependent image of an object.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a postdoctoral researcher focusing on digital humans, video editing and forgery detection.</div>
+    </div>
+	
+
+	<section class="subpages">	
+		<a href="/publications"><div class="subpages-title">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title">Teaching</div></a>
+	</section>
+	
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tum.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2019 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		<h1 class="page-title">IGNOR&#58; Image-guided Neural Object Rendering</h1>
+        <div class="page-date"><span>2018, Nov 26&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://zollhoefer.com" target="_blank" rel="noopener noreferrer">Michael Zollhöfer</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank" rel="noopener noreferrer">Christian Theobalt</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://www.lgdv.tf.fau.de/person/marc-stamminger/" target="_blank" rel="noopener noreferrer">Marc Stamminger</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://niessnerlab.org" target="_blank" rel="noopener noreferrer">Matthias Nießner</a>&emsp;</span>
+						
+		
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="IGNOR&#58; Image-guided Neural Object Rendering">-->
+			<img class="page-image" src=teaser.jpg alt="IGNOR&#58; Image-guided Neural Object Rendering">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>We propose a new learning-based novel view synthesis approach for scanned objects that is trained based on a set of multi-view images.
+Instead of using texture mapping or hand-designed image-based rendering, we directly train a deep neural network to synthesize a view-dependent image of an object.
+First, we employ a coverage-based nearest neighbour look-up to retrieve a set of reference frames that are explicitly warped to a given target view using cross-projection.
+Our network then learns to best composite the warped images.
+This enables us to generate photo-realistic results, while not having to allocate capacity on ``remembering’’ object appearance.
+Instead, the multi-view images can be reused. While this works well for diffuse objects, cross-projection does not generalize to view-dependent effects.
+Therefore, we propose a decomposition network that extracts view-dependent effects and that is trained in a self-supervised manner.
+After decomposition, the diffuse shading is cross-projected, while the view-dependent layer of the target view is regressed.
+We show the effectiveness of our approach both qualitatively and quantitatively on real as well as synthetic data.</p>
+
+	  
+	  
+		
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/1811.10720.pdf" target="_blank">[Paper]</a>&nbsp;</span>
+			
+		
+			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=s79HG9yn7QM" target="_blank">[Video]</a>&nbsp;</span>
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/ignor/thies2018ignor.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+		
+		<iframe width="898" height="505" src=https://www.youtube.com/embed/s79HG9yn7QM frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="page-cover-image">
+		</div> <!-- End Page Cover Image -->
+		
+	  
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=IGNOR&#58; Image-guided Neural Object Rendering&url=http://localhost:4000/posts/ignor/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/ignor/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/posts/ignor/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#ArXiv" class="tag">&#35; ArXiv</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>

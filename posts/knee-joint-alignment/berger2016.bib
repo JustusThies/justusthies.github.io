@@ -1,0 +1,21 @@
+% Encoding: UTF-8
+
+@COMMENT{BibTeX export based on data in FAU CRIS: https://cris.fau.de/}
+@COMMENT{For any questions please write to cris-support@fau.de}
+
+@article{faucris.110788964,
+ abstract = {Purpose: To allow for a purely image-based motion estimation and compensation in weight-bearing cone-beam computed tomography of the knee joint. Methods: Weight-bearing imaging of the knee joint in a standing position poses additional requirements for the image reconstruction algorithm. In contrast to supine scans, patient motion needs to be estimated and compensated. The authors propose a method that is based on 2D/3D registration of left and right femur and tibia segmented from a prior, motion-free reconstruction acquired in supine position. Each segmented bone is first roughly aligned to the motion-corrupted reconstruction of a scan in standing or squatting position. Subsequently, a rigid 2D/3D registration is performed for each bone to each of K projection images, estimating 6x4xK motion parameters. The motion of individual bones is combined into global motion fields using thin-plate-spline extrapolation. These can be incorporated into a motion-compensated reconstruction in the backprojection step. The authors performed visual and quantitative comparisons between a state-of-the-art marker-based (MB) method and two variants of the proposed method using gradient correlation (GC) and normalized gradient information (NGI) as similarity measure for the 2D/3D registration. Results: The authors evaluated their method on four acquisitions under different squatting positions of the same patient. All methods showed substantial improvement in image quality compared to the uncorrected reconstructions. Compared to NGI and MB, the GC method showed increased streaking artifacts due to misregistrations in lateral projection images. NGI and MB showed comparable image quality at the bone regions. Because the markers are attached to the skin, the MB method performed better at the surface of the legs where the authors observed slight streaking of the NGI and GC methods. For a quantitative evaluation, the authors computed the universal quality index (UQI) for all bone regions with respect to the motion-free reconstruction. The authors quantitative evaluation over regions around the bones yielded a mean UQI of 18.4 for no correction, 53.3 and 56.1 for the proposed method using GC and NGI, respectively, and 53.7 for the MB reference approach. In contrast to the authors registration-based corrections, the MB reference method caused slight nonrigid deformations at bone outlines when compared to a motion-free reference scan. Conclusions: The authors showed that their method based on the NGI similarity measure yields reconstruction quality close to the MB reference method. In contrast to the MB method, the proposed method does not require any preparation prior to the examination which will improve the clinical workflow and patient comfort. Further, the authors found that the MB method causes small, nonrigid deformations at the bone outline which indicates that markers may not accurately reflect the internal motion close to the knee joint. Therefore, the authors believe that the proposed method is a promising alternative to MB motion management.},
+ author = {Berger, Martin and Müller, Kerstin and Aichert, André and Unberath, Mathias and Thies, Justus and Choi, Jang-Hwan and Fahrig, Rebecca and Maier, Andreas},
+ doi = {10.1118/1.4941012},
+ faupublication = {yes},
+ journal = {Medical Physics},
+ keywords = {GRK-1773},
+ note = {UnivIS-Import:2017-12-18:Pub.2016.tech.IMMD.IMMD5.marker},
+ pages = {1235-1248},
+ peerreviewed = {Yes},
+ title = {{Marker}-free motion correction in weight-bearing cone-beam {CT} of the knee joint},
+ url = {https://www5.informatik.uni-erlangen.de/Forschung/Publikationen/2016/Berger16-MMC.pdf},
+ volume = {43},
+ year = {2016}
+}
+

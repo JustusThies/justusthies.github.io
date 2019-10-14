@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>FaceVR&#58; Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality - Justus Thies</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="FaceVR&#58; Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="We propose FaceVR, a novel image-based method that enables video teleconferencing in VR based on self-reenactment. The key component of FaceVR is a robust algorithm to perform real-time facial motion capture of an actor who is wearing a head-mounted display (HMD)." property="og:description">
+  
+  
+    <meta content="http://localhost:4000/posts/facevr/" property="og:url">
+  
+  
+    <meta content="2018-03-21T10:00:00+01:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="publication" property="article:section">
+    
+  
+  
+    
+    <meta content="SIGGRAPH" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="FaceVR&#58; Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/posts/facevr/">
+  
+  
+    <meta name="twitter:description" content="We propose FaceVR, a novel image-based method that enables video teleconferencing in VR based on self-reenactment. The key component of FaceVR is a robust algorithm to perform real-time facial motion capture of an actor who is wearing a head-mounted display (HMD).">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="We propose FaceVR, a novel image-based method that enables video teleconferencing in VR based on self-reenactment. The key component of FaceVR is a robust algorithm to perform real-time facial motion capture of an actor who is wearing a head-mounted display (HMD).">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a postdoctoral researcher focusing on digital humans, video editing and forgery detection.</div>
+    </div>
+	
+
+	<section class="subpages">	
+		<a href="/publications"><div class="subpages-title">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title">Teaching</div></a>
+	</section>
+	
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tum.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2019 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		<h1 class="page-title">FaceVR&#58; Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality</h1>
+        <div class="page-date"><span>2018, Mar 21&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://zollhoefer.com" target="_blank" rel="noopener noreferrer">Michael Zollhöfer</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://www.lgdv.tf.fau.de/person/marc-stamminger/" target="_blank" rel="noopener noreferrer">Marc Stamminger</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank" rel="noopener noreferrer">Christian Theobalt</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://niessnerlab.org" target="_blank" rel="noopener noreferrer">Matthias Nießner</a>&emsp;</span>
+						
+		
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="FaceVR&#58; Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality">-->
+			<img class="page-image" src=teaser.jpg alt="FaceVR&#58; Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>We propose FaceVR, a novel image-based method that enables video teleconferencing in VR based on self-reenactment.
+State-of-the-art face tracking methods in the VR context are focused on the animation of rigged 3d avatars.
+While they achieve good tracking performance the results look cartoonish and not real.
+In contrast to these model-based approaches, FaceVR enables VR teleconferencing using an image-based technique that results in nearly photo-realistic outputs.
+The key component of FaceVR is a robust algorithm to perform real-time facial motion capture of an actor who is wearing a head-mounted display (HMD), as well as a new data-driven approach for eye tracking from monocular videos.
+Based on reenactment of a prerecorded stereo video of the person without the HMD, FaceVR incorporates photo-realistic re-rendering in real time, thus allowing artificial modifications of face and eye appearances.
+For instance, we can alter facial expressions or change gaze directions in the prerecorded target video. In a live setup, we apply these newly-introduced algorithmic components.</p>
+
+	  
+	  
+		
+			<span class="post-paper-link"><a href="https://arxiv.org/abs/1610.03151" target="_blank">[Paper]</a>&nbsp;</span>
+			
+		
+			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=jIlujM5avU8" target="_blank">[Video]</a>&nbsp;</span>
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/facevr/thies2018facevr.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+		
+		<iframe width="898" height="505" src=https://www.youtube.com/embed/jIlujM5avU8 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="page-cover-image">
+		</div> <!-- End Page Cover Image -->
+		
+	  
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=FaceVR&#58; Real-Time Facial Reenactment and Eye Gaze Control in Virtual Reality&url=http://localhost:4000/posts/facevr/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/facevr/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+          <a href="https://plus.google.com/share?url=http://localhost:4000/posts/facevr/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#SIGGRAPH" class="tag">&#35; SIGGRAPH</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
