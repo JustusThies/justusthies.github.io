@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>IGNOR&#58; Image-guided Neural Object Rendering - Justus Thies</title>
+	<title>Image-guided Neural Object Rendering - Justus Thies</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Justus Thies" property="og:site_name">
   
-    <meta content="IGNOR&#58; Image-guided Neural Object Rendering" property="og:title">
+    <meta content="Image-guided Neural Object Rendering" property="og:title">
   
   
     <meta content="article" property="og:type">
@@ -20,7 +20,7 @@
     <meta content="http://localhost:4000/posts/ignor/" property="og:url">
   
   
-    <meta content="2018-11-26T10:00:00+01:00" property="article:published_time">
+    <meta content="2020-01-15T10:00:00+01:00" property="article:published_time">
     <meta content="http://localhost:4000/about/" property="article:author">
   
   
@@ -33,7 +33,7 @@
   
   
     
-    <meta content="ArXiv" property="article:tag">
+    <meta content="ICLR" property="article:tag">
     
   
 
@@ -41,7 +41,7 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@JustusThies">
   
-    <meta name="twitter:title" content="IGNOR&#58; Image-guided Neural Object Rendering">
+    <meta name="twitter:title" content="Image-guided Neural Object Rendering">
   
   
     <meta name="twitter:url" content="http://localhost:4000/posts/ignor/">
@@ -117,7 +117,7 @@
       </ul>
     </section> <!-- End Section Contact -->
     <div class="copyright">
-        <p>2019 &copy; Justus Thies</p>
+        <p>2020 &copy; Justus Thies</p>
 
         <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
     </div>
@@ -130,8 +130,8 @@
   <div class="page-content">
     <div class="wrap-content">
       <header class="header-page">
-		<h1 class="page-title">IGNOR&#58; Image-guided Neural Object Rendering</h1>
-        <div class="page-date"><span>2018, Nov 26&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		<h1 class="page-title">Image-guided Neural Object Rendering</h1>
+        <div class="page-date"><span>2020, Jan 15&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
 		
 			
 			<span><a href="/">Justus Thies</a>&emsp;</span>
@@ -158,22 +158,26 @@
 	  
 	    <div class="page-cover-image">
 		  <figure>
-			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="IGNOR&#58; Image-guided Neural Object Rendering">-->
-			<img class="page-image" src=teaser.jpg alt="IGNOR&#58; Image-guided Neural Object Rendering">
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="Image-guided Neural Object Rendering">-->
+			<img class="page-image" src=teaser.jpg alt="Image-guided Neural Object Rendering">
 			
 		  </figure>
 		</div> <!-- End Page Cover Image -->
 	  
 	  
-      <p>We propose a new learning-based novel view synthesis approach for scanned objects that is trained based on a set of multi-view images.
-Instead of using texture mapping or hand-designed image-based rendering, we directly train a deep neural network to synthesize a view-dependent image of an object.
-First, we employ a coverage-based nearest neighbour look-up to retrieve a set of reference frames that are explicitly warped to a given target view using cross-projection.
-Our network then learns to best composite the warped images.
-This enables us to generate photo-realistic results, while not having to allocate capacity on ``remembering’’ object appearance.
-Instead, the multi-view images can be reused. While this works well for diffuse objects, cross-projection does not generalize to view-dependent effects.
-Therefore, we propose a decomposition network that extracts view-dependent effects and that is trained in a self-supervised manner.
-After decomposition, the diffuse shading is cross-projected, while the view-dependent layer of the target view is regressed.
-We show the effectiveness of our approach both qualitatively and quantitatively on real as well as synthetic data.</p>
+      <p>We propose a learned image-guided rendering technique that combines the benefits of image-based rendering and GAN-based image synthesis.
+The goal of our method is to generate photo-realistic re-renderings of reconstructed objects for virtual and augmented reality applications (e.g., virtual showrooms, virtual tours and sightseeing, the digital inspection of historical artifacts).
+A core component of our work is the handling of view-dependent effects.
+Specifically, we directly train an object-specific deep neural network to synthesize the view-dependent appearance of an object.
+As input data we are using an RGB video of the object. This video is used to reconstruct a proxy geometry of the object via multi-view stereo.
+Based on this 3D proxy, the appearance of a captured view can be warped into a new target view as in classical image-based rendering.
+This warping assumes diffuse surfaces, in case of view-dependent effects, such as specular highlights, it leads to artifacts.
+To this end, we propose EffectsNet, a deep neural network that predicts view-dependent effects.
+Based on these estimations, we are able to convert observed images to diffuse images.
+These diffuse images can be projected into other views. In the target view, our pipeline reinserts the new view-dependent effects.
+To composite multiple reprojected images to a final output, we learn a composition network that outputs photo-realistic results.
+Using this image-guided approach, the network does not have to allocate capacity on ``remembering’’ object appearance, instead it learns how to combine the appearance of captured images.
+We demonstrate the effectiveness of our approach both qualitatively and quantitatively on synthetic as well as on real data.</p>
 
 	  
 	  
@@ -184,7 +188,7 @@ We show the effectiveness of our approach both qualitatively and quantitatively 
 			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=s79HG9yn7QM" target="_blank">[Video]</a>&nbsp;</span>
 		
 		
-			<span class="post-paper-bibtex"><a href="/posts/ignor/thies2018ignor.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			<span class="post-paper-bibtex"><a href="/posts/ignor/thies2020ignor.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
 			
 	  
 		
@@ -195,13 +199,13 @@ We show the effectiveness of our approach both qualitatively and quantitatively 
 	  
       <div class="page-footer">
         <!-- <div class="page-share"> -->
-          <!-- <a href="https://twitter.com/intent/tweet?text=IGNOR&#58; Image-guided Neural Object Rendering&url=http://localhost:4000/posts/ignor/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=Image-guided Neural Object Rendering&url=http://localhost:4000/posts/ignor/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
           <!-- <a href="https://facebook.com/sharer.php?u=http://localhost:4000/posts/ignor/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
           <!-- <a href="https://plus.google.com/share?url=http://localhost:4000/posts/ignor/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
         <!-- </div> -->
         <div class="page-tag">
           
-            <a href="/tags#ArXiv" class="tag">&#35; ArXiv</a>
+            <a href="/tags#ICLR" class="tag">&#35; ICLR</a>
           
         </div>
       </div>
