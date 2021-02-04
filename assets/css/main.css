@@ -1060,6 +1060,70 @@ table tfoot td {
   transform: scale(1.1);
 }
 
+.subpages .subpages-title2 {
+  font-family: 'PT Serif', serif;
+  margin: 0 0 10px;
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #787878;
+  font-weight: 700;
+  text-decoration:none;
+  text-align: center;
+}
+
+.subpages .subpages-title2:hover {
+  transform: scale(1.1);
+}
+
+
+/*.dot {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #515151;
+}*/
+.dot {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #515151;
+  
+  display: block;
+}
+
+/*.about .author-about::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 0;
+  display: block;
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  background-color: #515151;
+}*/
+
 
 .content-box {
   /*border: 1px solid red;*/

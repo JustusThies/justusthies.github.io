@@ -1,5 +1,83 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://justusthies.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://justusthies.github.io/" rel="alternate" type="text/html" /><updated>2020-12-15T23:16:44+01:00</updated><id>https://justusthies.github.io/feed.xml</id><title type="html">Justus Thies</title><subtitle>Personal Website of Justus Thies covering his publications and teaching courses.
-</subtitle><author><name>Justus Thies</name></author><entry><title type="html">NerFACE: Dynamic Neural Radiance Fields for Monocular 4D Facial Avatar Reconstruction</title><link href="https://justusthies.github.io/posts/nerface/" rel="alternate" type="text/html" title="NerFACE&amp;#58; Dynamic Neural Radiance Fields for Monocular 4D Facial Avatar Reconstruction" /><published>2020-12-08T08:00:00+01:00</published><updated>2020-12-08T08:00:00+01:00</updated><id>https://justusthies.github.io/posts/nerface</id><content type="html" xml:base="https://justusthies.github.io/posts/nerface/">&lt;p&gt;We present dynamic neural radiance fields for modeling the appearance and dynamics of a human face.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="https://justusthies.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://justusthies.github.io/" rel="alternate" type="text/html" /><updated>2021-02-04T14:59:08+01:00</updated><id>https://justusthies.github.io/feed.xml</id><title type="html">Justus Thies</title><subtitle>Personal Website of Justus Thies covering his publications and teaching courses.
+</subtitle><author><name>Justus Thies</name></author><entry><title type="html">Neural Capture and Synthesis at the Max Planck Institute for Intelligent Systems</title><link href="https://justusthies.github.io/posts/mpi-neural-capture-and-synthesis/" rel="alternate" type="text/html" title="Neural Capture and Synthesis at the Max Planck Institute for Intelligent Systems" /><published>2021-01-31T10:00:00+01:00</published><updated>2021-01-31T10:00:00+01:00</updated><id>https://justusthies.github.io/posts/mpi-neural-capture-and-synthesis</id><content type="html" xml:base="https://justusthies.github.io/posts/mpi-neural-capture-and-synthesis/">&lt;p&gt; &lt;/p&gt;
+&lt;div style=&quot;text-align: justify&quot;&gt;
+I am happy to announce that I am joining the Max Planck Institute for Intelligent Systems as a research group leader in April 2021.
+My Max Planck Research Group 'Neural Capture and Synthesis' will work at the intersection of computer graphics, computer vision and machine learning.
+&lt;/div&gt;
+
+&lt;div style=&quot;text-align: justify&quot;&gt; 
+The main theme of my work is to capture and to (re-)synthesize the real world using commodity hardware.
+It includes the modeling of the human body, tracking, as well as the reconstruction and interaction with the environment.
+The digitization is needed for various applications in AR/VR as well as in movie (post-)production.
+Teleconferencing and working in VR is of high interest for many companies ranging from social media platforms to car manufacturer.
+It enables the remote interaction in VR, e.g., the inspection of 3D content like CAD models or scans from real objects.
+A realistic reproduction of appearances and motions is key for such applications. 
+Capturing natural motions and expressions as well as the photorealistic reproduction of images under novel views are challenging.
+With the rise of deep learning methods and, especially, neural rendering, we see immense progress to succeed in these challenges.
+The goal of my work is to develop methods for AI-based image synthesis of humans, the underlying representation of appearance, geometry and motion to allow for explicit and implicit control over the synthesis process.
+My work on 3D reconstruction, tracking and rendering does not focus exclusively on humans but also on the environment and objects we interact with, thus, enabling applications like 3d telepresence or collaborative working in VR.
+In both areas, reconstruction and rendering, hybrid approaches that combine novel findings in machine learning with classical computer graphics and computer vision approaches show promising results.
+Nevertheless, these methods still suffer from limitations like generalizability, controllability and editability which I will tackle in my ongoing and future work.
+&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;face_overview.jpg&quot; alt=&quot;Face Projects&quot; /&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;scene_reco.jpg&quot; alt=&quot;Scene Reconstruction Projects&quot; /&gt;  &lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;non-rigid-tracking.jpg&quot; alt=&quot;Neural Non-rigid Tracking Projects&quot; /&gt;  &lt;/p&gt;
+
+&lt;p&gt;On my &lt;a href=&quot;https://justusthies.github.io/publications/&quot;&gt;website&lt;/a&gt; and on my &lt;a href=&quot;https://www.youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow&quot;&gt;YouTube page&lt;/a&gt; you will find a couple of interesting projects I have been working on in the past:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=p7UIF1Mw5GI&amp;amp;list=PLVOhpVSqYrEYMhjQ0MQ62JZgtRGTW5hPW&amp;amp;ab_channel=JustusThies&quot;&gt;Facial Reenactment / Reconstruction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=ofVgAEb1FiE&amp;amp;list=PLVOhpVSqYrEbIFkFsvdtO8FUkqbmn7cUQ&amp;amp;ab_channel=JustusThies&quot;&gt;Neural Rendering&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Kj_P-lHtWkU&amp;amp;list=PLVOhpVSqYrEYqHZIEfY4R6Lgp90LJFUd2&amp;amp;ab_channel=JustusThies&quot;&gt;Neural Non-rigid Tracking&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=52xlRn0ESek&amp;amp;list=PLVOhpVSqYrEZ6D3FFabhQolw5ZRCNVfiI&amp;amp;ab_channel=MatthiasNiessner&quot;&gt;3D Reconstruction / Texturing&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Tle7YaPkO_k&amp;amp;list=PLVOhpVSqYrEaZUh3ZktMfXwWuiQTMvuV8&amp;amp;ab_channel=MatthiasNiessner&quot;&gt;Multi-media Forensics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;openings&quot;&gt;Openings&lt;/h1&gt;
+&lt;div style=&quot;text-align: justify&quot;&gt; 
+My group as several open positions for Postdocs and PhD students.
+If you are interested and highly motivated to work in the above mentioned research fields, please write me an email (&lt;a href=&quot;mailto:justus.thies@tum.de&quot;&gt;justus.thies@tum.de&lt;/a&gt;)
+including the relevant application documents (CV, recommendation letters, transcript of records, etc.) and a short description of your research interests / plans (research statement).
+&lt;/div&gt;
+
+&lt;h3 id=&quot;qualification&quot;&gt;Qualification&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Applicants for a PhD must hold a Master’s degree in computer science or equivalent&lt;/li&gt;
+  &lt;li&gt;Fluent written and spoken English skills are essential&lt;/li&gt;
+  &lt;li&gt;Proficient coding skills (Python, C++ (this is critical and will be tested))&lt;/li&gt;
+  &lt;li&gt;Experience with deep learning frameworks (TensorFlow / PyTorch)&lt;/li&gt;
+  &lt;li&gt;Excitement, self-motivation, and commitment to revolutionize the field&lt;/li&gt;
+  &lt;li&gt;Post Doc Applicants Only: academic track record with publications at top-tier venues in computer vision,
+graphics, or machine learning (CVPR, ECCV/ICCV, Siggraph, Siggraph Asia, NeurIPS, ICML, ICLR)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;how-to-apply&quot;&gt;How to Apply&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Documents required: CV, research statement, BA and MA transcripts, MA thesis [optional]&lt;/li&gt;
+  &lt;li&gt;Ask two recommenders who know your work to directly email recommendation letters&lt;/li&gt;
+  &lt;li&gt;Send all documents (incl. rec. letters) directly to Justus Thies (&lt;a href=&quot;mailto:justus.thies@tum.de&quot;&gt;justus.thies@tum.de&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Please understand that we cannot review incomplete applications&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;additional-doctoral-programs&quot;&gt;Additional doctoral programs&lt;/h3&gt;
+
+&lt;p&gt;The MPI for Intelligent System also offers the following doctoral programs you can apply for:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;div style=&quot;text-align: justify&quot;&gt; The &lt;a href=&quot;https://imprs.is.mpg.de/&quot;&gt;International Max Planck Research School for Intelligent Systems&lt;/a&gt; (IMPRS-IS) brings together the MPI for Intelligent Systems with the University of Stuttgart and the University of Tübingen to form a highly visible and unique graduate school of internationally recognized faculty, working at the leading edge of the field.&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;div style=&quot;text-align: justify&quot;&gt; The &lt;a href=&quot;https://learning-systems.org/&quot;&gt;Max Planck ETH Center for Learning Systems&lt;/a&gt; (CLS) is a doctoral training program. Ph.D. students are jointly supervised by ETH Professors and MPI Directors and Group Leaders, and obtain their doctoral degree from ETH Zurich.&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Justus Thies&quot;, &quot;website_link&quot;=&gt;&quot;/&quot;}</name></author><category term="MPIIS" /><summary type="html">  I am happy to announce that I am joining the Max Planck Institute for Intelligent Systems as a research group leader in April 2021. My Max Planck Research Group 'Neural Capture and Synthesis' will work at the intersection of computer graphics, computer vision and machine learning.</summary></entry><entry><title type="html">NerFACE: Dynamic Neural Radiance Fields for Monocular 4D Facial Avatar Reconstruction</title><link href="https://justusthies.github.io/posts/nerface/" rel="alternate" type="text/html" title="NerFACE&amp;#58; Dynamic Neural Radiance Fields for Monocular 4D Facial Avatar Reconstruction" /><published>2020-12-08T08:00:00+01:00</published><updated>2020-12-08T08:00:00+01:00</updated><id>https://justusthies.github.io/posts/nerface</id><content type="html" xml:base="https://justusthies.github.io/posts/nerface/">&lt;p&gt;We present dynamic neural radiance fields for modeling the appearance and dynamics of a human face.
 Digitally modeling and reconstructing a talking human is a key building-block for a variety of applications.
 Especially, for telepresence applications in AR or VR, a faithful reproduction of the appearance including novel viewpoint or head-poses is required.
 In contrast to state-of-the-art approaches that model the geometry and material properties explicitly, or are purely image-based, we introduce an implicit representation of the head based on scene representation networks.
@@ -61,50 +139,7 @@ We demonstrate the improved capabilities of our technique by comparing against r
 &lt;p&gt;&lt;a href=&quot;http://gvv.mpi-inf.mpg.de/projects/EgoChat/&quot;&gt;Project Page&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Mohamed Elgharib&quot;, &quot;website_link&quot;=&gt;&quot;http://people.mpi-inf.mpg.de/~elgharib/&quot;}</name></author><category term="SIGGRAPH ASIA" /><summary type="html">We introduce a method for egocentric videoconferencing that enables hands-free video calls, for instance by people wearing smart glasses or other mixed-reality devices. Videoconferencing portrays valuable non-verbal communication and face expression cues, but usually requires a front-facing camera. Using a frontal camera in a hands-free setting when a person is on the move is impractical. Even holding a mobile phone camera in the front of the face while sitting for a long duration is not convenient. To overcome these issues, we propose a low-cost wearable egocentric camera setup that can be integrated into smart glasses. Our goal is to mimic a classical video call, and therefore, we transform the egocentric perspective of this camera into a front facing video. To this end, we employ a conditional generative adversarial neural network that learns a transition from the highly distorted egocentric views to frontal views common in videoconferencing. Our approach learns to transfer expression details directly from the egocentric view without using a complex intermediate parametric expressions model, as it is used by related face reenactment methods. We successfully handle subtle expressions, not easily captured by parametric blendshape-based solutions, e.g., tongue movement, eye movements, eye blinking, strong expressions and depth varying movements. To get control over the rigid head movements in the target view, we condition the generator on synthetic renderings of a moving neutral face. This allows us to synthesis results at different head poses. Our technique produces temporally smooth video-realistic renderings in real-time using a video-to-video translation network in conjunction with a temporal discriminator. We demonstrate the improved capabilities of our technique by comparing against related state-of-the art approaches.</summary></entry><entry><title type="html">WIPO: Artifical Intelligence and Intellectual Property</title><link href="https://justusthies.github.io/posts/wipo/" rel="alternate" type="text/html" title="WIPO&amp;#58; Artifical Intelligence and Intellectual Property" /><published>2020-09-18T09:00:00+02:00</published><updated>2020-09-18T09:00:00+02:00</updated><id>https://justusthies.github.io/posts/wipo</id><content type="html" xml:base="https://justusthies.github.io/posts/wipo/">&lt;p&gt;This virtual exhibition presents current approaches of AI-driven media creation.
 It raises interesting questions regarding intellectual property.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.wipo.int/about-ip/en/artificial_intelligence/&quot;&gt;Weblink to the official website.&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Justus Thies&quot;, &quot;website_link&quot;=&gt;&quot;/&quot;}</name></author><category term="WIPO" /><summary type="html">This virtual exhibition presents current approaches of AI-driven media creation. It raises interesting questions regarding intellectual property.</summary></entry><entry><title type="html">Seminar: 3D Vision</title><link href="https://justusthies.github.io/posts/3D-Vision-WS20-21/" rel="alternate" type="text/html" title="Seminar&amp;#58; 3D Vision" /><published>2020-08-24T23:00:00+02:00</published><updated>2020-08-24T23:00:00+02:00</updated><id>https://justusthies.github.io/posts/3D-Vision-WS20-21</id><content type="html" xml:base="https://justusthies.github.io/posts/3D-Vision-WS20-21/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
-&lt;p&gt;In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).&lt;/p&gt;
-
-&lt;p&gt;The talks have to cover the following topics:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;face tracking / reconstruction&lt;/li&gt;
-  &lt;li&gt;facial reenactment (audio driven, video driven animation)&lt;/li&gt;
-  &lt;li&gt;body tracking / reconstruction&lt;/li&gt;
-  &lt;li&gt;hand tracking&lt;/li&gt;
-  &lt;li&gt;static / dynamic scene reconstruction&lt;/li&gt;
-  &lt;li&gt;scene understanding&lt;/li&gt;
-  &lt;li&gt;inverse rendering, material estimation, light estimation&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;organization--requirements&quot;&gt;Organization / Requirements&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Lecture: 3D Scanning &amp;amp; Motion Capturing&lt;/li&gt;
-  &lt;li&gt;The participants have to present their topics in a talk (in English), which should last 30 minutes.&lt;/li&gt;
-  &lt;li&gt;The semi-final slides (PDF) should be sent one week before the talk; otherwise, the talk will be canceled.&lt;/li&gt;
-  &lt;li&gt;A short report (approximately 2-3 pages in the ACM SIGGRAPH TOG format (acmtog)) should be prepared and sent within two weeks after the talk. When you send the report, please send the final slides (PDF) together.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).</summary></entry><entry><title type="html">Practical Course: 3D Scanning and Spatial Learning</title><link href="https://justusthies.github.io/posts/3D-Scanning-and-Spatial-Learning-WS20-21/" rel="alternate" type="text/html" title="Practical Course&amp;#58; 3D Scanning and Spatial Learning" /><published>2020-08-24T23:00:00+02:00</published><updated>2020-08-24T23:00:00+02:00</updated><id>https://justusthies.github.io/posts/3D-Scanning-and-Spatial-Learning-WS20-21</id><content type="html" xml:base="https://justusthies.github.io/posts/3D-Scanning-and-Spatial-Learning-WS20-21/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
-&lt;p&gt;3D scanning and motion capture is of paramount importance for content creation, man-machine as well as machine-environment interaction. In this course we will continue the topics covered by the 3D Scanning &amp;amp; Motion Capture as well as by the Introduction to Deep Learning lecture.
-In the spirit of ‘learning by doing’ the students are asked to implement state-of-the-art reconstruction methods or current research topics in the field.
-Specifically, we will have projects on:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;human motion capturing (e.g., Fusion4D, BodyFusion)&lt;/li&gt;
-  &lt;li&gt;real-time facial motion capturing (spare and dense approaches)&lt;/li&gt;
-  &lt;li&gt;3D scene reconstruction (e.g., BundleFusion)&lt;/li&gt;
-  &lt;li&gt;scan refinement (e.g., ShapeFromShading)&lt;/li&gt;
-  &lt;li&gt;neural rendering of 3D content (e.g., DeepVoxel, NeuralRendering)&lt;/li&gt;
-  &lt;li&gt;scene completion (e.g., ScanComplete)&lt;/li&gt;
-  &lt;li&gt;3D object retrieval and alignment (e.g., Scan2CAD)&lt;/li&gt;
-  &lt;li&gt;scene understanding, instance segmentation (e.g., ScanNet, 3D-SIS)&lt;/li&gt;
-  &lt;li&gt;neural scene representations (DeepSDF, OccupancyNets, NeRF,…)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;objective&quot;&gt;Objective&lt;/h3&gt;
-&lt;p&gt;Upon completion of this module, students will have acquired extensive theoretical concepts behind state-of-the art 3D reconstruction methods, in particular in the context of human motion capturing, static object scanning, scene understanding and synthesis of captured scenes. Besides the theoretical foundations, a significant aspect lies on the practical realization and implementation of such algorithms.&lt;/p&gt;
-
-&lt;h3 id=&quot;organization&quot;&gt;Organization&lt;/h3&gt;
-&lt;p&gt;In the practical course students shall get familiar with state-of-the-art 3D scanning. They will be assisted by current PhD students working in this field (regular office hours). To ensure a good progress during the semester, we will have mandatory meetings (every two weeks) where the students report their current state. In the end of the course, the students are asked to give a talk about their project and results.&lt;/p&gt;
-
-&lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-&lt;p&gt;Introduction to Informatics I, Analysis, Linear Algebra, Computer Graphics, 3D scanning &amp;amp; Motion Capture, Introduction to Deep Learning, C++&lt;/p&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content 3D scanning and motion capture is of paramount importance for content creation, man-machine as well as machine-environment interaction. In this course we will continue the topics covered by the 3D Scanning &amp;amp; Motion Capture as well as by the Introduction to Deep Learning lecture. In the spirit of ‘learning by doing’ the students are asked to implement state-of-the-art reconstruction methods or current research topics in the field. Specifically, we will have projects on: human motion capturing (e.g., Fusion4D, BodyFusion) real-time facial motion capturing (spare and dense approaches) 3D scene reconstruction (e.g., BundleFusion) scan refinement (e.g., ShapeFromShading) neural rendering of 3D content (e.g., DeepVoxel, NeuralRendering) scene completion (e.g., ScanComplete) 3D object retrieval and alignment (e.g., Scan2CAD) scene understanding, instance segmentation (e.g., ScanNet, 3D-SIS) neural scene representations (DeepSDF, OccupancyNets, NeRF,…)</summary></entry><entry><title type="html">Lecture: 3D Scanning and Motion Capture</title><link href="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS20-21/" rel="alternate" type="text/html" title="Lecture&amp;#58; 3D Scanning and Motion Capture" /><published>2020-08-24T23:00:00+02:00</published><updated>2020-08-24T23:00:00+02:00</updated><id>https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS20-21</id><content type="html" xml:base="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS20-21/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.wipo.int/about-ip/en/artificial_intelligence/&quot;&gt;Weblink to the official website.&lt;/a&gt;&lt;/p&gt;</content><author><name>{&quot;display_name&quot;=&gt;&quot;Justus Thies&quot;, &quot;website_link&quot;=&gt;&quot;/&quot;}</name></author><category term="WIPO" /><summary type="html">This virtual exhibition presents current approaches of AI-driven media creation. It raises interesting questions regarding intellectual property.</summary></entry><entry><title type="html">Lecture: 3D Scanning and Motion Capture</title><link href="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS20-21/" rel="alternate" type="text/html" title="Lecture&amp;#58; 3D Scanning and Motion Capture" /><published>2020-08-24T23:00:00+02:00</published><updated>2020-08-24T23:00:00+02:00</updated><id>https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS20-21</id><content type="html" xml:base="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS20-21/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
 &lt;p&gt;3D reconstruction, RGB-D scanning (Kinect, Tango, RealSense), ICP, camera tracking, sensor calibration, VolumetricFusion, Non-Rigid Registration, PoseTracking, Motion Capture, Body-, Face-, and Hand-Tracking, 3D DeepLearning, selected optimization techniques to solve the problem statements (GN, LM, gradient descent).&lt;/p&gt;
 
 &lt;ul&gt;
@@ -204,4 +239,24 @@ Specifically, we will have projects on:&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
-&lt;p&gt;Introduction to Informatics I, Analysis, Linear Algebra, Computer Graphics, C++&lt;/p&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content 3D reconstruction, RGB-D scanning (Kinect, Tango, RealSense), ICP, camera tracking, sensor calibration, VolumetricFusion, Non-Rigid Registration, PoseTracking, Motion Capture, Body-, Face-, and Hand-Tracking, 3D DeepLearning, selected optimization techniques to solve the problem statements (GN, LM, gradient descent).</summary></entry></feed>
+&lt;p&gt;Introduction to Informatics I, Analysis, Linear Algebra, Computer Graphics, C++&lt;/p&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content 3D reconstruction, RGB-D scanning (Kinect, Tango, RealSense), ICP, camera tracking, sensor calibration, VolumetricFusion, Non-Rigid Registration, PoseTracking, Motion Capture, Body-, Face-, and Hand-Tracking, 3D DeepLearning, selected optimization techniques to solve the problem statements (GN, LM, gradient descent).</summary></entry><entry><title type="html">Seminar: 3D Vision</title><link href="https://justusthies.github.io/posts/3D-Vision-WS20-21/" rel="alternate" type="text/html" title="Seminar&amp;#58; 3D Vision" /><published>2020-08-24T23:00:00+02:00</published><updated>2020-08-24T23:00:00+02:00</updated><id>https://justusthies.github.io/posts/3D-Vision-WS20-21</id><content type="html" xml:base="https://justusthies.github.io/posts/3D-Vision-WS20-21/">&lt;h3 id=&quot;content&quot;&gt;Content&lt;/h3&gt;
+&lt;p&gt;In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).&lt;/p&gt;
+
+&lt;p&gt;The talks have to cover the following topics:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;face tracking / reconstruction&lt;/li&gt;
+  &lt;li&gt;facial reenactment (audio driven, video driven animation)&lt;/li&gt;
+  &lt;li&gt;body tracking / reconstruction&lt;/li&gt;
+  &lt;li&gt;hand tracking&lt;/li&gt;
+  &lt;li&gt;static / dynamic scene reconstruction&lt;/li&gt;
+  &lt;li&gt;scene understanding&lt;/li&gt;
+  &lt;li&gt;inverse rendering, material estimation, light estimation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;organization--requirements&quot;&gt;Organization / Requirements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Lecture: 3D Scanning &amp;amp; Motion Capturing&lt;/li&gt;
+  &lt;li&gt;The participants have to present their topics in a talk (in English), which should last 30 minutes.&lt;/li&gt;
+  &lt;li&gt;The semi-final slides (PDF) should be sent one week before the talk; otherwise, the talk will be canceled.&lt;/li&gt;
+  &lt;li&gt;A short report (approximately 2-3 pages in the ACM SIGGRAPH TOG format (acmtog)) should be prepared and sent within two weeks after the talk. When you send the report, please send the final slides (PDF) together.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Justus Thies</name></author><category term="TUM" /><summary type="html">Content In this course, students will autonomously investigate recent research about 3D Scanning &amp;amp; Motion Capturing. Independent investigation for further reading, critical analysis, and evaluation of the topic is required. Each participant has to give a talk about a paper of the top tier conferences in this field (SIGGRAPH, SIGGRAPH ASIA, CVPR, ICCV, ECCV, …). In addition to the talk we ask for a summary of the paper (minimum 2 pages).</summary></entry></feed>
