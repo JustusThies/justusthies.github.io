@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<!-- <title>SpoC&#58; Spoofing Camera Fingerprints - Justus Thies</title> -->
-	<title>SpoC&#58; Spoofing Camera Fingerprints</title>
+	<!-- <title>TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers - Justus Thies</title> -->
+	<title>TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Justus Thies" property="og:site_name">
   
-    <meta content="SpoC&#58; Spoofing Camera Fingerprints" property="og:title">
+    <meta content="TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers" property="og:title">
   
   
     <meta content="article" property="og:type">
   
   
-    <meta content="In this paper, we challenge forensic forgery detectors that are based on camera fingerprints (i.e., traces of the image capturing and processing pipeline) to gain insights into their vulnerabilities." property="og:description">
+    <meta content="We introduce TransformerFusion, a transformer-based 3D scene reconstruction approach. From an input monocular RGB video, the video frames are processed by a transformer network that fuses the observations into a volumetric feature grid representing the scene; this feature grid is then decoded into an implicit 3D scene representation." property="og:description">
   
   
-    <meta content="https://justusthies.github.io/posts/spoc/" property="og:url">
+    <meta content="https://justusthies.github.io/posts/transfusion/" property="og:url">
   
   
-    <meta content="2021-01-26T09:00:00+01:00" property="article:published_time">
+    <meta content="2021-07-12T09:30:00+02:00" property="article:published_time">
     <meta content="https://justusthies.github.io/about/" property="article:author">
   
   
@@ -34,7 +34,7 @@
   
   
     
-    <meta content="WMF2021" property="article:tag">
+    <meta content="ARXIV" property="article:tag">
     
   
 
@@ -42,19 +42,19 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@JustusThies">
   
-    <meta name="twitter:title" content="SpoC&#58; Spoofing Camera Fingerprints">
+    <meta name="twitter:title" content="TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers">
   
   
-    <meta name="twitter:url" content="https://justusthies.github.io/posts/spoc/">
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/transfusion/">
   
   
-    <meta name="twitter:description" content="In this paper, we challenge forensic forgery detectors that are based on camera fingerprints (i.e., traces of the image capturing and processing pipeline) to gain insights into their vulnerabilities.">
+    <meta name="twitter:description" content="We introduce TransformerFusion, a transformer-based 3D scene reconstruction approach. From an input monocular RGB video, the video frames are processed by a transformer network that fuses the observations into a volumetric feature grid representing the scene; this feature grid is then decoded into an implicit 3D scene representation.">
   
   
     <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
   
 
-	<meta name="description" content="In this paper, we challenge forensic forgery detectors that are based on camera fingerprints (i.e., traces of the image capturing and processing pipeline) to gain insights into their vulnerabilities.">
+	<meta name="description" content="We introduce TransformerFusion, a transformer-based 3D scene reconstruction approach. From an input monocular RGB video, the video frames are processed by a transformer network that fuses the observations into a volumetric feature grid representing the scene; this feature grid is then decoded into an implicit 3D scene representation.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -145,12 +145,16 @@
     <div class="wrap-content">
       <header class="header-page">
 			
-			<h1 class="page-title">SpoC&#58; Spoofing Camera Fingerprints</h1>
+			<h1 class="page-title">TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers</h1>
 			
-        <div class="page-date"><span>2021, Jan 26&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+        <div class="page-date"><span>2021, Jul 12&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
 		
 						
-			<span><a href="http://www.grip.unina.it/people/userprofile/davide_cozzolino.html" target="_blank" rel="noopener noreferrer">Davide Cozzolino</a>&emsp;</span>
+			<span><a href="http://niessnerlab.org/members/aljaz_bozic/profile.html" target="_blank" rel="noopener noreferrer">Aljaz Bozic</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://pablorpalafox.github.io" target="_blank" rel="noopener noreferrer">Pablo Palafox</a>&emsp;</span>
 						
 		
 			
@@ -158,15 +162,11 @@
 						
 		
 						
-			<span><a href="http://niessnerlab.org/members/andreas_roessler/profile.html" target="_blank" rel="noopener noreferrer">Andreas Rössler</a>&emsp;</span>
+			<span><a href="https://angeladai.github.io" target="_blank" rel="noopener noreferrer">Angela Dai</a>&emsp;</span>
 						
 		
 						
 			<span><a href="https://niessnerlab.org" target="_blank" rel="noopener noreferrer">Matthias Nießner</a>&emsp;</span>
-						
-		
-						
-			<span><a href="http://www.grip.unina.it/people/userprofile/verdoliva.html" target="_blank" rel="noopener noreferrer">Luisa Verdoilva</a>&emsp;</span>
 						
 		
       </header>
@@ -174,54 +174,43 @@
 	  
 	    <div class="page-cover-image">
 		  <figure>
-			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="SpoC&#58; Spoofing Camera Fingerprints">-->
-			<img class="page-image" src=teaser.jpg alt="SpoC&#58; Spoofing Camera Fingerprints">
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers">-->
+			<img class="page-image" src=teaser.jpg alt="TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers">
 			
 		  </figure>
 		</div> <!-- End Page Cover Image -->
 	  
 	  
-      <p>Thanks to the fast progress in synthetic media generation, creating realistic false images has become very easy.
-Such images can be used to wrap  “rich” fake news with enhanced credibility, spawning a new wave of high-impact, high-risk misinformation campaigns.
-Therefore, there is a fast-growing interest in reliable detectors of manipulated media.
-The most powerful detectors, to date, rely on the subtle traces left by any device on all images acquired by it.
-In particular, due to proprietary in-camera processes, like demosaicing or compression, each camera model leaves trademark traces that can be exploited for forensic analyses.
-The absence or distortion of such traces in the target image is a strong hint of manipulation.</p>
-
-<p>In this paper, we challenge such detectors to gain better insight into their vulnerabilities.
-This is an important study in order to build better forgery detectors able to face malicious attacks. Our proposal consists of a GAN-based approach that injects camera traces into synthetic images.
-Given a GANgenerated image, we insert the traces of a specific camera model into it and deceive state-of-the-art detectors into believing the image was acquired by that model.
-Likewise, we deceive independent detectors of synthetic GAN images into believing the image is real. Experiments prove the effectiveness of the proposed method in a wide array of conditions.
-Moreover, no prior information on the attacked detectors is needed, but only sample images from the target camera.</p>
+      <p>We introduce TransformerFusion, a transformer-based 3D scene reconstruction approach. From an input monocular RGB video, the video frames are processed by a transformer network that fuses the observations into a volumetric feature grid representing the scene; this feature grid is then decoded into an implicit 3D scene representation. Key to our approach is the transformer architecture that enables the network to learn to attend to the most relevant image frames for each 3D location in the scene, supervised only by the scene reconstruction task. Features are fused in a coarse-to-fine fashion, storing fine-level features only where needed, requiring lower memory storage and enabling fusion at interactive rates. The feature grid is then decoded to a higher-resolution scene reconstruction, using an MLP-based surface occupancy prediction from interpolated coarse-to-fine 3D features. Our approach results in an accurate surface reconstruction, outperforming state-of-the-art multi-view stereo depth estimation methods, fully-convolutional 3D reconstruction approaches, and approaches using LSTM- or GRU-based recurrent networks for video sequence fusion.</p>
 
 	  
 	  
 		
-			<span class="post-paper-link"><a href="https://arxiv.org/pdf/1911.12069.pdf" target="_blank">[Paper]</a>&nbsp;</span>
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2107.02191.pdf" target="_blank">[Paper]</a>&nbsp;</span>
 			
 		
-			
-					
-			
+			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=LIpTKYfKSqw" target="_blank">[Video]</a>&nbsp;</span>
 		
 		
-			<span class="post-paper-bibtex"><a href="/posts/spoc/cozzolino2021spoc.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			<span class="post-paper-bibtex"><a href="/posts/transfusion/bozic2021transfusion.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
 			
 	  
 
 		
-			
+		<iframe width="898" height="505" src=https://www.youtube-nocookie.com/embed/LIpTKYfKSqw frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="page-cover-image">
+		</div> <!-- End Page Cover Image -->
 		
 	  
       <div class="page-footer">
         <!-- <div class="page-share"> -->
-          <!-- <a href="https://twitter.com/intent/tweet?text=SpoC&#58; Spoofing Camera Fingerprints&url=https://justusthies.github.io/posts/spoc/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
-          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/spoc/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
-          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/spoc/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=TransformerFusion&#58; Monocular RGB Scene Reconstruction using Transformers&url=https://justusthies.github.io/posts/transfusion/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/transfusion/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/transfusion/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
         <!-- </div> -->
         <div class="page-tag">
           
-            <a href="/tags#WMF2021" class="tag">&#35; WMF2021</a>
+            <a href="/tags#ARXIV" class="tag">&#35; ARXIV</a>
           
         </div>
       </div>
