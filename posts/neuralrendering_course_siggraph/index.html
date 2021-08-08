@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>SIGGRAPH 2021 - Course on the Advances in Neural Rendering - Justus Thies</title> -->
+	<title>SIGGRAPH 2021 - Course on the Advances in Neural Rendering</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="SIGGRAPH 2021 - Course on the Advances in Neural Rendering" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="This course covers the advances in neural rendering over the years 2020-2021." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/neuralrendering_course_siggraph/" property="og:url">
+  
+  
+    <meta content="2021-08-08T11:00:00+02:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="tutorial" property="article:section">
+    
+  
+  
+    
+    <meta content="SIGGRAPH" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="SIGGRAPH 2021 - Course on the Advances in Neural Rendering">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/neuralrendering_course_siggraph/">
+  
+  
+    <meta name="twitter:description" content="This course covers the advances in neural rendering over the years 2020-2021.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="This course covers the advances in neural rendering over the years 2020-2021.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a research group leader focusing on digital humans, video editing and forgery detection.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tuebingen.mpg.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2021 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		
+			<h1 class="page-title">SIGGRAPH 2021&#58; Course on the Advances in Neural Rendering</h1>
+			
+        <div class="page-date"><span>2021, Aug 08&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+						
+			<span><a href="https://people.mpi-inf.mpg.de/~atewari/" target="_blank" rel="noopener noreferrer">Ayush Tewari</a>&emsp;</span>
+						
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://www.ohadf.com/" target="_blank" rel="noopener noreferrer">Ohad Fried</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://vsitzmann.github.io/" target="_blank" rel="noopener noreferrer">Vincent Sitzmann</a>&emsp;</span>
+						
+		
+						
+			<span><a href="" target="_blank" rel="noopener noreferrer"></a>&emsp;</span>
+						
+		
+						
+			<span><a href="http://www.kalyans.org/" target="_blank" rel="noopener noreferrer">Kalyan Sunkavalli</a>&emsp;</span>
+						
+		
+						
+			<span><a href="http://www.ricardomartinbrualla.com/" target="_blank" rel="noopener noreferrer">Ricardo Martin-Brualla</a>&emsp;</span>
+						
+		
+						
+			<span><a href="http://www.cs.cmu.edu/~tsimon/" target="_blank" rel="noopener noreferrer">Tomas Simon</a>&emsp;</span>
+						
+		
+						
+			<span><a href="http://jsaragih.org/Home_Page.html" target="_blank" rel="noopener noreferrer">Jason Saragih</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://niessnerlab.org" target="_blank" rel="noopener noreferrer">Matthias Nießner</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://research.google/people/106687/" target="_blank" rel="noopener noreferrer">Rohit K Pandey</a>&emsp;</span>
+						
+		
+						
+			<span><a href="http://www.seanfanello.it/" target="_blank" rel="noopener noreferrer">Sean Fanello</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://stanford.edu/~gordonwz/" target="_blank" rel="noopener noreferrer">Gordon Wetzstein</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://people.csail.mit.edu/junyanz/" target="_blank" rel="noopener noreferrer">Jun-Yan Zhu</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://people.mpi-inf.mpg.de/~theobalt/" target="_blank" rel="noopener noreferrer">Christian Theobalt</a>&emsp;</span>
+						
+		
+						
+			<span><a href="http://graphics.stanford.edu/~maneesh/" target="_blank" rel="noopener noreferrer">Maneesh Agrawala</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://research.adobe.com/person/eli-shechtman/" target="_blank" rel="noopener noreferrer">Eli Shechtman</a>&emsp;</span>
+						
+		
+						
+			<span><a href="http://www.danbgoldman.com/" target="_blank" rel="noopener noreferrer">Dan B Goldman</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://zollhoefer.com" target="_blank" rel="noopener noreferrer">Michael Zollhöfer</a>&emsp;</span>
+						
+		
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="SIGGRAPH 2021 - Course on the Advances in Neural Rendering">-->
+			<img class="page-image" src=teaser.jpg alt="SIGGRAPH 2021 - Course on the Advances in Neural Rendering">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>Neural rendering is an emerging class of deep image and video generation approaches that enable control of scene properties such as illumination, camera parameters, pose, geometry, appearance, and semantic structure.
+It combines machine learning techniques with physical knowledge from computer graphics to obtain controllable and photo-realistic models of scenes.
+This course covers the advances in neural rendering over the last year.
+We will first cover the fundamentals of machine learning and computer graphics relevant for neural rendering. 
+Next, we will present state of the art techniques for the many important neural rendering methods for applications such as novel view synthesis, semantic photo manipulation, facial and body reenactment, relighting, free-viewpoint video, and the creation of photo-realistic avatars for virtual and augmented reality telepresence.
+Finally, we will conclude with a discussion on the ethical implications of this technology and open research problems.</p>
+
+<p>##<a href="https://www.neuralrender.com/">Tutorial Website</a></p>
+
+	  
+	  
+			
+		
+			
+					
+			
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/neuralrendering_course_siggraph/tewari2021neuralrendering.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+
+		
+			
+		
+	  
+      <div class="page-footer">
+        <!-- <div class="page-share"> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=SIGGRAPH 2021 - Course on the Advances in Neural Rendering&url=https://justusthies.github.io/posts/neuralrendering_course_siggraph/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/neuralrendering_course_siggraph/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/neuralrendering_course_siggraph/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+        <!-- </div> -->
+        <div class="page-tag">
+          
+            <a href="/tags#SIGGRAPH" class="tag">&#35; SIGGRAPH</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
