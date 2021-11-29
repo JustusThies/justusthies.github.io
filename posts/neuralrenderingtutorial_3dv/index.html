@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>3DV 2021 - Tutorial on the Advances in Neural Rendering - Justus Thies</title> -->
+	<title>3DV 2021 - Tutorial on the Advances in Neural Rendering</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="3DV 2021 - Tutorial on the Advances in Neural Rendering" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="In this tutorial, we will talk about the advances in neural rendering, especially the underlying 2D and 3D representations that allow for novel viewpoint synthesis, controllability and editability. Specifically, we will discuss neural rendering methods based on 2D GANs, techniques using 3D Neural Radiance Fields or learnable sphere proxies. Besides methods that handle static content, we will talk about dynamic content as well." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/neuralrenderingtutorial_3dv/" property="og:url">
+  
+  
+    <meta content="2021-11-29T10:00:00+01:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="tutorial" property="article:section">
+    
+  
+  
+    
+    <meta content="3DV" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="3DV 2021 - Tutorial on the Advances in Neural Rendering">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/neuralrenderingtutorial_3dv/">
+  
+  
+    <meta name="twitter:description" content="In this tutorial, we will talk about the advances in neural rendering, especially the underlying 2D and 3D representations that allow for novel viewpoint synthesis, controllability and editability. Specifically, we will discuss neural rendering methods based on 2D GANs, techniques using 3D Neural Radiance Fields or learnable sphere proxies. Besides methods that handle static content, we will talk about dynamic content as well.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="In this tutorial, we will talk about the advances in neural rendering, especially the underlying 2D and 3D representations that allow for novel viewpoint synthesis, controllability and editability. Specifically, we will discuss neural rendering methods based on 2D GANs, techniques using 3D Neural Radiance Fields or learnable sphere proxies. Besides methods that handle static content, we will talk about dynamic content as well.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a research group leader focusing on digital humans, video editing and forgery detection.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tuebingen.mpg.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2021 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		
+			<h1 class="page-title">3DV 2021&#58; Tutorial on the Advances in Neural Rendering</h1>
+			
+        <div class="page-date"><span>2021, Nov 29&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+						
+			<span><a href="https://zollhoefer.com" target="_blank" rel="noopener noreferrer">Michael Zollhöfer</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://people.mpi-inf.mpg.de/~atewari/" target="_blank" rel="noopener noreferrer">Ayush Tewari</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://vsitzmann.github.io/" target="_blank" rel="noopener noreferrer">Vincent Sitzmann</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://stanford.edu/~gordonwz/" target="_blank" rel="noopener noreferrer">Gordon Wetzstein</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://christophlassner.de/" target="_blank" rel="noopener noreferrer">Christoph Lassner</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://lingjie0206.github.io/" target="_blank" rel="noopener noreferrer">Lingjie Liu</a>&emsp;</span>
+						
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="3DV 2021 - Tutorial on the Advances in Neural Rendering">-->
+			<img class="page-image" src=teaser.jpg alt="3DV 2021 - Tutorial on the Advances in Neural Rendering">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>Neural rendering is a fast evolving field at the intersection of computer graphics and computer vision. In this tutorial, we will talk about the advances in neural rendering, especially the underlying 2D and 3D representations that allow for novel viewpoint synthesis, controllability and editability. Specifically, we will discuss neural rendering methods based on 2D GANs, techniques using 3D Neural Radiance Fields or learnable sphere proxies. Besides methods that handle static content, we will talk about dynamic content as well.</p>
+
+<p><a href="https://3dv2021.surrey.ac.uk/tutorials/#Tutorial2">3DV Tutorial Website</a></p>
+
+<p>The tutorial is based on our two state-of-the-art reports:</p>
+<ul>
+  <li><a href="https://justusthies.github.io/posts/advancedneuralrenderingstar/">Advanced Neural Rendering</a></li>
+  <li><a href="https://justusthies.github.io/posts/neuralrenderingstar/">Neural Rendering</a></li>
+</ul>
+
+	  
+	  
+			
+		
+			
+					
+			
+		
+			
+	  
+
+		
+			
+		
+	  
+      <div class="page-footer">
+        <!-- <div class="page-share"> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=3DV 2021 - Tutorial on the Advances in Neural Rendering&url=https://justusthies.github.io/posts/neuralrenderingtutorial_3dv/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/neuralrenderingtutorial_3dv/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/neuralrenderingtutorial_3dv/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+        <!-- </div> -->
+        <div class="page-tag">
+          
+            <a href="/tags#3DV" class="tag">&#35; 3DV</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
