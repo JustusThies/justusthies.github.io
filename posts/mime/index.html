@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>Human-Aware 3D Scene Generation - Justus Thies</title> -->
+	<title>Human-Aware 3D Scene Generation</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="Human-Aware 3D Scene Generation" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Humans constantly interact with their environment. They walk through a room, touch objects, rest on a chair, or sleep in a bed. All these interactions contain information about the scene layout and object placement which we leverage to generate scenes from human motion." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/mime/" property="og:url">
+  
+  
+    <meta content="2023-03-29T11:00:00+02:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="publication" property="article:section">
+    
+  
+  
+    
+    <meta content="CVPR" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="Human-Aware 3D Scene Generation">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/mime/">
+  
+  
+    <meta name="twitter:description" content="Humans constantly interact with their environment. They walk through a room, touch objects, rest on a chair, or sleep in a bed. All these interactions contain information about the scene layout and object placement which we leverage to generate scenes from human motion.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="Humans constantly interact with their environment. They walk through a room, touch objects, rest on a chair, or sleep in a bed. All these interactions contain information about the scene layout and object placement which we leverage to generate scenes from human motion.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a research group leader focusing on digital humans, video editing and forgery detection.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tuebingen.mpg.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2023 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		
+			<h1 class="page-title">MIME&#58; Human-Aware 3D Scene Generation</h1>
+			
+        <div class="page-date"><span>2023, Mar 29&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+						
+			<span><a href="https://xyyhw.top/" target="_blank" rel="noopener noreferrer">Hongwei Yi</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://is.mpg.de/person/chuang2" target="_blank" rel="noopener noreferrer">Chun-Hao P. Huang</a>&emsp;</span>
+						
+		
+						
+			<span><a href="" target="_blank" rel="noopener noreferrer">Shashank Tripathi</a>&emsp;</span>
+						
+		
+						
+			<span><a href="" target="_blank" rel="noopener noreferrer">Lea Hering</a>&emsp;</span>
+						
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://ps.is.mpg.de/~black" target="_blank" rel="noopener noreferrer">Michael J. Black</a>&emsp;</span>
+						
+		
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="Human-Aware 3D Scene Generation">-->
+			<img class="page-image" src=teaser.jpg alt="Human-Aware 3D Scene Generation">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>Generating realistic 3D worlds occupied by moving humans has many applications in games, architecture, and synthetic data creation. But generating such scenes is expensive and labor intensive. Recent work generates human poses and motions given a 3D scene. Here, we take the opposite approach and generate 3D indoor scenes given 3D human motion. Such motions can come from archival motion capture or from IMU sensors worn on the body, effectively turning human movement in a “scanner” of the 3D world. Intuitively, human movement indicates the free-space in a room and human contact indicates surfaces or objects that support activities such as sitting, lying or touching. We propose MIME (Mining Interaction and Movement to infer 3D Environments), which is a generative model of indoor scenes that produces furniture layouts that are consistent with the human movement. MIME uses an auto-regressive transformer architecture that takes the already generated objects in the scene as well as the human motion as input, and outputs the next plausible object. To train MIME, we build a dataset by populating the 3D FRONT scene dataset with 3D humans. Our experiments show that MIME produces more diverse and plausible 3D scenes than a recent generative scene method that does not know about human movement.</p>
+
+<p><a href="https://mime.is.tue.mpg.de">Code and data</a></p>
+
+	  
+	  
+		
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2212.04360" target="_blank">[Paper]</a>&nbsp;</span>
+			
+		
+			
+				
+					<span class="post-video-link"><a href="https://download.is.tue.mpg.de/mime/perceivingsyste%20-%20MIME-1202_v2.mp4" target="_blank">[Video]&nbsp;</a></span>
+					
+			
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/mime/yi2023mime.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+
+		
+			
+		
+	  
+      <div class="page-footer">
+        <!-- <div class="page-share"> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=Human-Aware 3D Scene Generation&url=https://justusthies.github.io/posts/mime/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/mime/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/mime/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+        <!-- </div> -->
+        <div class="page-tag">
+          
+            <a href="/tags#CVPR" class="tag">&#35; CVPR</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
