@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>Lecture&#58; 3D Scanning and Motion Capture - Justus Thies</title> -->
+	<title>Lecture&#58; 3D Scanning and Motion Capture</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="Lecture&#58; 3D Scanning and Motion Capture" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="This hands-on lecture focuses on cutting-edge 3D reconstruction approaches, including volumetric fusion approaches on implicit functions, face tracking, hand tracking, and much more! We also cover essential optimization techniques such as Gauss-Newton and Levenberg-Marquardt." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS23-24/" property="og:url">
+  
+  
+    <meta content="2023-08-24T23:00:00+02:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="post" property="article:section">
+    
+  
+  
+    
+    <meta content="TUDa" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="Lecture&#58; 3D Scanning and Motion Capture">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/3D-Scanning-and-Motion-Capture-WS23-24/">
+  
+  
+    <meta name="twitter:description" content="This hands-on lecture focuses on cutting-edge 3D reconstruction approaches, including volumetric fusion approaches on implicit functions, face tracking, hand tracking, and much more! We also cover essential optimization techniques such as Gauss-Newton and Levenberg-Marquardt.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="This hands-on lecture focuses on cutting-edge 3D reconstruction approaches, including volumetric fusion approaches on implicit functions, face tracking, hand tracking, and much more! We also cover essential optimization techniques such as Gauss-Newton and Levenberg-Marquardt.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a full professor at TU Darmstadt and research group leader at MPI-IS focusing on digital humans.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tuebingen.mpg.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2023 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+	
+		<div class="ribbon-right"><span>Winter Term 2023/2024</span></div>
+			
+  <div class="page-content">
+		
+    <div class="wrap-content">
+
+      <header class="header-page">
+		<h1 class="page-title">Lecture&#58; 3D Scanning and Motion Capture</h1>		
+		<div class="page-subtitle"><span>Winter Term 2023/2024</span></div>
+        <div class="page-date"><span>2023, Aug 24&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+			
+				<table style="width:100%; border:0px; background:transparent">
+					<tr>
+					<th  style="width:50%;" align="center">
+						<p>
+							<h3>Lecturer</h3>
+						
+						<span style='margin-left:1.25em; margin-right:1.25em; display:inline-block;'>
+							
+							<a href="/">Justus Thies</a>
+									
+						</span>		
+						
+						</p>
+					</th>
+					<th align="center">
+						<p>
+							<h3>Teaching Assistants</h3>
+						
+						</p>
+					</th>
+					</tr>
+				</table>
+			
+				
+			</header>
+
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="Lecture&#58; 3D Scanning and Motion Capture">-->
+			<img class="page-image" src=teaser.jpg alt="Lecture&#58; 3D Scanning and Motion Capture">
+			
+			</figure>		
+		</div> <!-- End Page Cover Image -->
+	  
+
+		
+
+  
+		<h3 id="content">Content</h3>
+<p>The lecture and exercises will cover 3D reconstruction from various input
+modalities (Webcams, RGB-D cameras (Kinect, Realsense, …). It will start with
+basic concepts of what is 3D, the different representations, how to capture 3D
+and how the devices and sensors function. Based on this introduction, rigid and
+non-rigid tracking and reconstruction will be discussed. Specialized face and
+body tracking methods will be covered and the applications of the 3D
+reconstruction and tracking will be shown. In addition to the 3D surface
+reconstruction, techniques for appearance modelling and material estimation
+will be shown.</p>
+
+<p>++ Basic concepts of geometry (Meshes, Point Clouds, Pixels &amp; Voxels)
+++ RGB and Depth Cameras (Calibration, active/passive stereo, Time of
+Flight (ToF), Structured Light, Laser Scanner, Lidar)
+++ Surface Representations (Polygonal meshes, parametric surfaces,
+implicit surfaces (Radial basis functions, signed distance functions,
+indicator function), Marching cubes)
+++ Overview of reconstruction methods (Structure from Motion (SfM),
+Multi-view Stereo (MVS), SLAM, Bundle Adjustment)
+++ Rigid Surface Tracking &amp; Reconstruction (Pose alignment, ICP, online
+surface reconstruction pipeline (KinectFusion), scalable surface
+representations (VoxelHashing, OctTrees), loop closures and global
+optimization)
+++ Non-rigid Surface Tracking &amp; Reconstruction (Surface deformation for
+modeling, Regularizers: ARAP, ED, etc., Non-rigid surface fitting: e.g.,
+non-rigid ICP. Non-rigid reconstruction:
+DynamicFusion/VolumeDeform/KillingFusion)
+++ Face Tracking &amp; Reconstruction (Keypoint detection &amp; tracking,
+Parametric / Statistical Models -&gt; BlendShapes)
+++ Body Tracking &amp; Reconstruction (Skeleton Tracking and Inverse
+Kinematics, Marker-based motion capture)
+++ Material capture (Lightstage, BRDF estimation)
+++ Outlook DeepLearning-based tracking</p>
+
+<h3 id="aim">Aim</h3>
+<p>Basic understanding of 3D capturing devices and underlying principles (active vs.
+passive stereo, ToF etc.), modelling of geometry and conversion between
+different representations, principles of static reconstruction (fusion, ICP) and
+non-rigid reconstruction using deformation priors. Basic understanding of
+specialized class-specific tracking (face, body, hands) and their applications.</p>
+
+
+	  
+	  
+			
+		
+			
+					
+			
+		
+			
+	  
+		
+			
+		
+	  
+      <div class="page-footer">
+        <div class="page-tag">
+          
+            <a href="/tags#TUDa" class="tag">&#35; TUDa</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
