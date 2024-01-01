@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>DPHMs - Diffusion Parametric Head Models for Depth-based Tracking - Justus Thies</title> -->
+	<title>DPHMs - Diffusion Parametric Head Models for Depth-based Tracking</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="DPHMs - Diffusion Parametric Head Models for Depth-based Tracking" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="We introduce Diffusion Parametric Head Models (DPHMs), a generative model that enables robust volumetric head reconstruction and tracking from monocular depth sequences." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/dphm/" property="og:url">
+  
+  
+    <meta content="2024-01-01T10:00:00+01:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="publication" property="article:section">
+    
+  
+  
+    
+    <meta content="ArXiv" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="DPHMs - Diffusion Parametric Head Models for Depth-based Tracking">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/dphm/">
+  
+  
+    <meta name="twitter:description" content="We introduce Diffusion Parametric Head Models (DPHMs), a generative model that enables robust volumetric head reconstruction and tracking from monocular depth sequences.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="We introduce Diffusion Parametric Head Models (DPHMs), a generative model that enables robust volumetric head reconstruction and tracking from monocular depth sequences.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a full professor at TU Darmstadt and research group leader at MPI-IS focusing on digital humans.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tuebingen.mpg.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2024 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		
+			<h1 class="page-title">DPHMs&#58; Diffusion Parametric Head Models for Depth-based Tracking</h1>
+			
+        <div class="page-date"><span>2024, Jan 01&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+						
+			<span><a href="https://tangjiapeng.github.io/" target="_blank" rel="noopener noreferrer">Jiapeng Tang</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://angeladai.github.io" target="_blank" rel="noopener noreferrer">Angela Dai</a>&emsp;</span>
+						
+		
+						
+			<span><a href="" target="_blank" rel="noopener noreferrer"></a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://www.linkedin.com/in/dr-lev-markhasin-5617a112b" target="_blank" rel="noopener noreferrer">Lev Markhasin</a>&emsp;</span>
+						
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://niessnerlab.org" target="_blank" rel="noopener noreferrer">Matthias Nießner</a>&emsp;</span>
+						
+		
+
+		<div class="page-tag">
+          
+            <a href="/tags#ArXiv" class="tag">ArXiv</a>
+          
+        </div>
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="DPHMs - Diffusion Parametric Head Models for Depth-based Tracking">-->
+			<img class="page-image" src=teaser.jpg alt="DPHMs - Diffusion Parametric Head Models for Depth-based Tracking">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>We introduce Diffusion Parametric Head Models (DPHMs), a generative model that enables robust volumetric head reconstruction and tracking from monocular depth sequences. While recent volumetric head models, such as NPHMs, can now excel in representing high-fidelity head geometries, tracking and reconstruction heads from real-world single-view depth sequences remains very challenging, as the fitting to partial and noisy observations is underconstrained. To tackle these challenges, we propose a latent diffusion-based prior to regularize volumetric head reconstruction and tracking. This prior-based regularizer effectively constrains the identity and expression codes to lie on the underlying latent manifold which represents plausible head shapes. To evaluate the effectiveness of the diffusion-based prior, we collect a dataset of monocular Kinect sequences consisting of various complex facial expression motions and rapid transitions. We compare our method to state-of-the-art tracking methods, and demonstrate improved head identity reconstruction as well as robust expression tracking.</p>
+
+	  
+	  
+		
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2312.01068" target="_blank">[Paper]</a>&nbsp;</span>
+			
+		
+			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=w_EJ5LDJ7T4" target="_blank">[Video]</a>&nbsp;</span>
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/dphm/tang2024dphm.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+
+		
+		<iframe width="898" height="505" src=https://www.youtube-nocookie.com/embed/w_EJ5LDJ7T4 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="page-cover-image">
+		</div> <!-- End Page Cover Image -->
+		
+	  
+      <div class="page-footer">
+        <!-- <div class="page-share"> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=DPHMs - Diffusion Parametric Head Models for Depth-based Tracking&url=https://justusthies.github.io/posts/dphm/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/dphm/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/dphm/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+        <!-- </div> -->
+        <!--<div class="page-tag">
+          
+            <a href="/tags#ArXiv" class="tag">&#35; ArXiv</a>
+          
+        </div>-->
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
