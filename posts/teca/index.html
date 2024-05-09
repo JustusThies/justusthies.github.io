@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<!-- <title>TADA! Text to Animatable Digital Avatars - Justus Thies</title> -->
-	<title>TADA! Text to Animatable Digital Avatars</title>
+	<!-- <title>TECA - Text-Guided Generation and Editing of Compositional 3D Avatars - Justus Thies</title> -->
+	<title>TECA - Text-Guided Generation and Editing of Compositional 3D Avatars</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Justus Thies" property="og:site_name">
   
-    <meta content="TADA! Text to Animatable Digital Avatars" property="og:title">
+    <meta content="TECA - Text-Guided Generation and Editing of Compositional 3D Avatars" property="og:title">
   
   
     <meta content="article" property="og:type">
   
   
-    <meta content="We introduce TADA, a simple-yet-effective approach that takes textual descriptions and produces expressive 3D avatars with high-quality geometry and lifelike textures, that can be animated and rendered with traditional graphics pipelines." property="og:description">
+    <meta content="Given a text description, our method produces a compositional 3D avatar consisting of a mesh-based face and body and NeRF-based hair, clothing and other accessories." property="og:description">
   
   
-    <meta content="https://justusthies.github.io/posts/tada/" property="og:url">
+    <meta content="https://justusthies.github.io/posts/teca/" property="og:url">
   
   
-    <meta content="2024-01-01T00:00:00+01:00" property="article:published_time">
+    <meta content="2024-01-13T10:00:00+01:00" property="article:published_time">
     <meta content="https://justusthies.github.io/about/" property="article:author">
   
   
@@ -42,19 +42,19 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@JustusThies">
   
-    <meta name="twitter:title" content="TADA! Text to Animatable Digital Avatars">
+    <meta name="twitter:title" content="TECA - Text-Guided Generation and Editing of Compositional 3D Avatars">
   
   
-    <meta name="twitter:url" content="https://justusthies.github.io/posts/tada/">
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/teca/">
   
   
-    <meta name="twitter:description" content="We introduce TADA, a simple-yet-effective approach that takes textual descriptions and produces expressive 3D avatars with high-quality geometry and lifelike textures, that can be animated and rendered with traditional graphics pipelines.">
+    <meta name="twitter:description" content="Given a text description, our method produces a compositional 3D avatar consisting of a mesh-based face and body and NeRF-based hair, clothing and other accessories.">
   
   
     <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
   
 
-	<meta name="description" content="We introduce TADA, a simple-yet-effective approach that takes textual descriptions and produces expressive 3D avatars with high-quality geometry and lifelike textures, that can be animated and rendered with traditional graphics pipelines.">
+	<meta name="description" content="Given a text description, our method produces a compositional 3D avatar consisting of a mesh-based face and body and NeRF-based hair, clothing and other accessories.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -145,28 +145,24 @@
     <div class="wrap-content">
       <header class="header-page">
 		
-			<h1 class="page-title">TADA&#58; Text to Animatable Digital Avatars</h1>
+			<h1 class="page-title">TECA&#58; Text-Guided Generation and Editing of Compositional 3D Avatars</h1>
 			
-        <div class="page-date"><span>2024, Jan 01&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+        <div class="page-date"><span>2024, Jan 13&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
 		
 						
-			<span><a href="https://github.com/tingtingliao" target="_blank" rel="noopener noreferrer">Tingting Liao</a>&emsp;</span>
-						
-		
-						
-			<span><a href="https://xyyhw.top/" target="_blank" rel="noopener noreferrer">Hongwei Yi</a>&emsp;</span>
+			<span><a href="" target="_blank" rel="noopener noreferrer">Hao Zhang</a>&emsp;</span>
 						
 		
 						
-			<span><a href="https://xiuyuliang.cn/" target="_blank" rel="noopener noreferrer">Yuliang Xiu</a>&emsp;</span>
+			<span><a href="" target="_blank" rel="noopener noreferrer">Yao Feng</a>&emsp;</span>
 						
 		
 						
-			<span><a href="https://me.kiui.moe/" target="_blank" rel="noopener noreferrer">Jiangxiang Tang</a>&emsp;</span>
+			<span><a href="" target="_blank" rel="noopener noreferrer">Peter Kulits</a>&emsp;</span>
 						
 		
 						
-			<span><a href="" target="_blank" rel="noopener noreferrer">Yangyi Huang</a>&emsp;</span>
+			<span><a href="" target="_blank" rel="noopener noreferrer">Yandong Wen</a>&emsp;</span>
 						
 		
 			
@@ -188,41 +184,41 @@
 	  
 	    <div class="page-cover-image">
 		  <figure>
-			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="TADA! Text to Animatable Digital Avatars">-->
-			<img class="page-image" src=teaser.jpg alt="TADA! Text to Animatable Digital Avatars">
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="TECA - Text-Guided Generation and Editing of Compositional 3D Avatars">-->
+			<img class="page-image" src=teaser.jpg alt="TECA - Text-Guided Generation and Editing of Compositional 3D Avatars">
 			
 		  </figure>
 		</div> <!-- End Page Cover Image -->
 	  
 	  
-      <p>We introduce TADA, a simple-yet-effective approach that takes textual descriptions and produces expressive 3D avatars with high-quality geometry and lifelike textures, that can be animated and rendered with traditional graphics pipelines. Existing text-based character generation methods are limited in terms of geometry and texture quality, and cannot be realistically animated due to inconsistent align-007 ment between the geometry and the texture, particularly in the face region. To overcome these limitations, TADA leverages the synergy of a 2D diffusion model and an animatable parametric body model. Specifically, we derive an optimizable high-resolution body model from SMPL-X with 3D displacements and a texture map, and use hierarchical rendering with score distillation sampling (SDS) to create high-quality, detailed, holistic 3D avatars from text. To ensure alignment between the geometry and texture, we render normals and RGB images of the generated character and exploit their latent embeddings in the SDS training process. We further introduce various expression parameters to deform the generated character during training, ensuring that the semantics of our generated character remain consistent with the original SMPL-X model, resulting in an animatable character. Comprehensive evaluations demonstrate that TADA significantly surpasses existing approaches on both qualitative and quantitative measures. TADA enables creation of large-scale digital character assets that are ready for animation and rendering, while also being easily editable through natural language. The code will be public for research purposes.</p>
+      <p>Our goal is to create a realistic 3D facial avatar with hair and accessories using only a text description. While this challenge has attracted significant recent interest, existing methods either lack realism, produce unrealistic shapes, or do not support editing, such as modifications to the hairstyle. We argue that existing methods are limited because they employ a monolithic modeling approach, using a single representation for the head, face, hair, and accessories. Our observation is that the hair and face, for example, have very different structural qualities that benefit from different representations. Building on this insight, we generate avatars with a compositional model, in which the head, face, and upper body are represented with traditional 3D meshes, and the hair, clothing, and accessories with neural radiance fields (NeRF). The model-based mesh representation provides a strong geometric prior for the face region, improving realism while enabling editing of the person’s appearance. By using NeRFs to represent the remaining components, our method is able to model and synthesize parts with complex geometry and appearance, such as curly hair and fluffy scarves. Our novel system synthesizes these high-quality compositional avatars from text descriptions. Specifically, we generate a face image using text, fit a parametric shape model to it, and inpaint texture using diffusion models. Conditioned on the generated face, we sequentially generate style components such as hair or clothing using Score Distillation Sampling (SDS) with guidance from CLIPSeg segmentations. However, this alone is not sufficient to produce avatars with a high degree of realism. Consequently, we introduce a hierarchical approach to refine the non-face regions using a BLIP-based loss combined with SDS. The experimental results demonstrate that our method, Text-guided generation and Editing of Compositional Avatars (TECA), produces avatars that are more realistic than those of recent methods while being editable because of their compositional nature. For example, our TECA enables the seamless transfer of compositional features like hairstyles, scarves, and other accessories between avatars. This capability supports applications such as virtual try-on.</p>
 
-<p><a href="https://tada.is.tue.mpg.de/">Project Page</a></p>
+<p><a href="https://yfeng95.github.io/teca/">Project Page</a></p>
 
 	  
 	  
 		
-			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2308.10899" target="_blank">[Paper]</a>&nbsp;</span>
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2309.07125" target="_blank">[Paper]</a>&nbsp;</span>
 			
 		
-			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=w5rdcPQWktE" target="_blank">[Video]</a>&nbsp;</span>
+			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=W7NDJt2HJxM" target="_blank">[Video]</a>&nbsp;</span>
 		
 		
-			<span class="post-paper-bibtex"><a href="/posts/tada/liao2023tada.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			<span class="post-paper-bibtex"><a href="/posts/teca/zhang2024teca.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
 			
 	  
 
 		
-		<iframe width="898" height="505" src=https://www.youtube-nocookie.com/embed/w5rdcPQWktE frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="898" height="505" src=https://www.youtube-nocookie.com/embed/W7NDJt2HJxM frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		<div class="page-cover-image">
 		</div> <!-- End Page Cover Image -->
 		
 	  
       <div class="page-footer">
         <!-- <div class="page-share"> -->
-          <!-- <a href="https://twitter.com/intent/tweet?text=TADA! Text to Animatable Digital Avatars&url=https://justusthies.github.io/posts/tada/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
-          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/tada/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
-          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/tada/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=TECA - Text-Guided Generation and Editing of Compositional 3D Avatars&url=https://justusthies.github.io/posts/teca/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/teca/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/teca/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
         <!-- </div> -->
         <!--<div class="page-tag">
           

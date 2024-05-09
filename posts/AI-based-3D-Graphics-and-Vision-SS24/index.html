@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>Lecture&#58; AI-based 3D Graphics and Vision - Justus Thies</title> -->
+	<title>Lecture&#58; AI-based 3D Graphics and Vision</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="Lecture&#58; AI-based 3D Graphics and Vision" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="The lecture will cover AI-based 3D reconstruction, synthesis, and rendering from various input modalities (image, text, audio). It covers topics like 2D/3D neural rendering, deepfakes, natural image synthesis with different controls, as well as motion and video generation." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/AI-based-3D-Graphics-and-Vision-SS24/" property="og:url">
+  
+  
+    <meta content="2024-04-24T23:00:00+02:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="post" property="article:section">
+    
+  
+  
+    
+    <meta content="TUDa" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="Lecture&#58; AI-based 3D Graphics and Vision">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/AI-based-3D-Graphics-and-Vision-SS24/">
+  
+  
+    <meta name="twitter:description" content="The lecture will cover AI-based 3D reconstruction, synthesis, and rendering from various input modalities (image, text, audio). It covers topics like 2D/3D neural rendering, deepfakes, natural image synthesis with different controls, as well as motion and video generation.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="The lecture will cover AI-based 3D reconstruction, synthesis, and rendering from various input modalities (image, text, audio). It covers topics like 2D/3D neural rendering, deepfakes, natural image synthesis with different controls, as well as motion and video generation.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a full professor at TU Darmstadt and research group leader at MPI-IS focusing on digital humans.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tuebingen.mpg.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2024 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+	
+		<div class="ribbon-right"><span>Summer Term 2024</span></div>
+			
+  <div class="page-content">
+		
+    <div class="wrap-content">
+
+      <header class="header-page">
+		<h1 class="page-title">Lecture&#58; AI-based 3D Graphics and Vision</h1>		
+		<div class="page-subtitle"><span>Summer Term 2024</span></div>
+        <div class="page-date"><span>2024, Apr 24&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+			
+				<table style="width:100%; border:0px; background:transparent">
+					<tr>
+					<th  style="width:50%;" align="center">
+						<p>
+							<h3>Lecturer</h3>
+						
+						<span style='margin-left:1.25em; margin-right:1.25em; display:inline-block;'>
+							
+							<a href="/">Justus Thies</a>
+									
+						</span>		
+						
+						</p>
+					</th>
+					<th align="center">
+						<p>
+							<h3>Teaching Assistants</h3>
+						
+						</p>
+					</th>
+					</tr>
+				</table>
+			
+				
+			</header>
+
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="Lecture&#58; AI-based 3D Graphics and Vision">-->
+			<img class="page-image" src=teaser.jpg alt="Lecture&#58; AI-based 3D Graphics and Vision">
+			
+			</figure>		
+		</div> <!-- End Page Cover Image -->
+	  
+
+		
+
+  
+		<h3 id="content">Content</h3>
+<p>The lecture will cover AI-based 3D reconstruction from various input modalities (Webcams, RGB-D cameras (Kinect, Realsense, …). The lecture builds upon the classical 3D reconstruction methods discussed in the ‘3D Scanning &amp; Motion Capture’ lecture and shows how components and data structures of those methods can be replaced or extended by methods from AI. It will start with basic concepts of 2D neural rendering, including methods like Pix2Pix, Deferred Neural Rendering and alike. Then, more advanced topics like 3D/4D neural scene representations are discussed. To train those representations, differentiable rendering needs to be understood. The lecture will introduce methods for static and dynamic reconstruction with different levels of controllability and editability.
+++ Concept of 2D Neural Rendering
+++ Deferred Neural Rendering, AI-based Image-based Rendering.
+++ 3D Neural Rendering and Neural Scene Representations
+++ Neural Radiance Fields (NeRFs)
+++ Neural Point-based Graphics, Gaussian Splatting
+++ Differentiable Rendering (Rasterization, Volume Rendering, Shading)
+++ Relighting and Material Reconstruction
+++ DeepFakes
+++ Outlook: detection of synthetic media</p>
+
+<h3 id="aim">Aim</h3>
+<p>Basic understanding of how methods of AI can be used for 3D capturing of objects, scenes, and humans. It includes the principles of 2D and 3D neural rendering, as well as the differentiable rendering (Inverse Graphics).</p>
+
+
+	  
+	  
+			
+		
+			
+					
+			
+		
+			
+	  
+		
+			
+		
+	  
+      <div class="page-footer">
+        <div class="page-tag">
+          
+            <a href="/tags#TUDa" class="tag">&#35; TUDa</a>
+          
+        </div>
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
