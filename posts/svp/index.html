@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>Stable Video Portraits - Justus Thies</title> -->
+	<title>Stable Video Portraits</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="Stable Video Portraits" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Stable Video Portraits is a novel hybrid 2D/3D generation method that outputs photorealistic videos of talking faces leveraging a large pre-trained text-to-image prior (2D), controlled via a 3DMM (3D). It is based on a personalized image diffusion prior which allows us to generate new videos of the subject, and also to edit the appearance by blending the personalized image prior with a general text-conditioned model." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/svp/" property="og:url">
+  
+  
+    <meta content="2024-10-01T01:00:00+02:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="publication" property="article:section">
+    
+  
+  
+    
+    <meta content="ECCV" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="Stable Video Portraits">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/svp/">
+  
+  
+    <meta name="twitter:description" content="Stable Video Portraits is a novel hybrid 2D/3D generation method that outputs photorealistic videos of talking faces leveraging a large pre-trained text-to-image prior (2D), controlled via a 3DMM (3D). It is based on a personalized image diffusion prior which allows us to generate new videos of the subject, and also to edit the appearance by blending the personalized image prior with a general text-conditioned model.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="Stable Video Portraits is a novel hybrid 2D/3D generation method that outputs photorealistic videos of talking faces leveraging a large pre-trained text-to-image prior (2D), controlled via a 3DMM (3D). It is based on a personalized image diffusion prior which allows us to generate new videos of the subject, and also to edit the appearance by blending the personalized image prior with a general text-conditioned model.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a full professor at TU Darmstadt leading the chair for 3D Graphics & Vision.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/justus-thies-b46141257" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tu-darmstadt.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2024 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		
+			<h1 class="page-title">Stable Video Portraits</h1>
+			
+        <div class="page-date"><span>2024, Oct 01&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+						
+			<span><a href="" target="_blank" rel="noopener noreferrer">Mirela Ostrek</a>&emsp;</span>
+						
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+
+		<div class="page-tag">
+          
+            <a href="/tags#ECCV" class="tag">ECCV</a>
+          
+        </div>
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="Stable Video Portraits">-->
+			<img class="page-image" src=teaser.jpg alt="Stable Video Portraits">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>Rapid advances in the field of generative AI and text-to-image methods in particular have transformed the way we interact with and perceive computer-generated imagery today. In parallel, much progress has been made in 3D face reconstruction, using 3D Morphable Models (3DMM). In this paper, we present Stable Video Portraits, a novel hybrid 2D/3D generation method that outputs photorealistic videos of talking faces leveraging a large pre-trained text-to-image prior (2D), controlled via a 3DMM (3D). Specifically, we introduce a person-specific fine-tuning of a general 2D stable diffusion model which we lift to a video model by providing temporal 3DMM sequences as conditioning and by introducing a temporal denoising procedure. As an output, this model generates temporally smooth imagery of a person with 3DMM-based controls, i.e., a person-specific avatar. The facial appearance of this person-specific avatar can be edited and morphed to text-defined celebrities, without any test-time fine-tuning. The method is analyzed quantitatively and qualitatively, and we show that our method outperforms state-of-the-art monocular head avatar methods.</p>
+
+<p><a href="https://svp.is.tue.mpg.de/">Project Page</a></p>
+
+	  
+	  
+		
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2409.18083" target="_blank">[Paper]</a>&nbsp;</span>
+			
+		
+			
+					
+			
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/svp/ostrek2024svp.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+
+		
+			
+		
+	  
+      <div class="page-footer">
+        <!-- <div class="page-share"> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=Stable Video Portraits&url=https://justusthies.github.io/posts/svp/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/svp/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/svp/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+        <!-- </div> -->
+        <!--<div class="page-tag">
+          
+            <a href="/tags#ECCV" class="tag">&#35; ECCV</a>
+          
+        </div>-->
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>

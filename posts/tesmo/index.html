@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- <title>TeSMo - Generating Human Interaction Motions in Scenes with Text Control - Justus Thies</title> -->
+	<title>TeSMo - Generating Human Interaction Motions in Scenes with Text Control</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="Justus Thies" property="og:site_name">
+  
+    <meta content="TeSMo - Generating Human Interaction Motions in Scenes with Text Control" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="TeSMo is a method for text-controlled scene-aware motion generation based on denoising diffusion models. Specifically, we pre-train a scene-agnostic text-to-motion diffusion model, emphasizing goal-reaching constraints on large-scale motion-capture datasets. Then, we enhance this model with a scene-aware component, fine-tuned using data augmented with detailed scene information, including ground plane and object shapes." property="og:description">
+  
+  
+    <meta content="https://justusthies.github.io/posts/tesmo/" property="og:url">
+  
+  
+    <meta content="2024-09-29T11:00:00+02:00" property="article:published_time">
+    <meta content="https://justusthies.github.io/about/" property="article:author">
+  
+  
+    <meta content="https://justusthies.github.io/assets/img/teaser.jpg" property="og:image">
+  
+  
+    
+    <meta content="publication" property="article:section">
+    
+  
+  
+    
+    <meta content="ECCV" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@JustusThies">
+  
+    <meta name="twitter:title" content="TeSMo - Generating Human Interaction Motions in Scenes with Text Control">
+  
+  
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/tesmo/">
+  
+  
+    <meta name="twitter:description" content="TeSMo is a method for text-controlled scene-aware motion generation based on denoising diffusion models. Specifically, we pre-train a scene-agnostic text-to-motion diffusion model, emphasizing goal-reaching constraints on large-scale motion-capture datasets. Then, we enhance this model with a scene-aware component, fine-tuned using data augmented with detailed scene information, including ground plane and object shapes.">
+  
+  
+    <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
+  
+
+	<meta name="description" content="TeSMo is a method for text-controlled scene-aware motion generation based on denoising diffusion models. Specifically, we pre-train a scene-agnostic text-to-motion diffusion model, emphasizing goal-reaching constraints on large-scale motion-capture datasets. Then, we enhance this model with a scene-aware component, fine-tuned using data augmented with detailed scene information, including ground plane and object shapes.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="/"><img src="/assets/img/justus-thies.jpg" alt="Justus Thies"></a>
+      </div>
+      <div class="author-name">Justus Thies</div>
+	  <div class="author-about">I am a full professor at TU Darmstadt leading the chair for 3D Graphics & Vision.</div>
+    </div>
+	
+
+	<section class="subpages">
+		<a href="/reconstruction"><div class="subpages-title">Capture & <br> Synthesis</div></a>
+		<a href="/forensics"><div class="subpages-title">Multi-media <br> Forensics</div></a>
+		<span class="dot"></span>
+	</section>
+	<section class="subpages">
+		<a href="/publications"><div class="subpages-title2">Publications</div></a>
+		<a href="/teaching"><div class="subpages-title2">Teaching</div></a>
+		<a href="/tutorials"><div class="subpages-title2">Tutorials  & <br> Demos</div></a>
+	</section>
+	<br><br>
+	<section class="subpages">
+		<a href="/openings"><div class="subpages-title">Openings</div></a>
+		<a href="https://ncs.is.tuebingen.mpg.de/" target="_blank"><div class="subpages-title">Group Website &#128279;</div></a>
+		<a href="/services"><div class="subpages-title">Research Community Services</div></a>
+	</section>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/JustusThies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://youtube.com/channel/UCwmSTvnV-sjtlIlNvWYC6Ow" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/100012738961011" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/justusthies" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/justus-thies-b46141257" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:justus.thies@tu-darmstadt.de"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+        <p>2024 &copy; Justus Thies</p>
+
+        <p>Website is based on <a href="https://github.com/artemsheludko/flexible-jekyll" target="_blank">flexible-jekyll</a>.</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+
+<div class="content-box clearfix">
+  <article class="article-page">
+		
+  <div class="page-content">
+    <div class="wrap-content">
+      <header class="header-page">
+		
+			<h1 class="page-title">TeSMo&#58; Generating Human Interaction Motions in Scenes with Text Control</h1>
+			
+        <div class="page-date"><span>2024, Sep 29&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+		
+						
+			<span><a href="https://xyyhw.top/" target="_blank" rel="noopener noreferrer">Hongwei Yi</a>&emsp;</span>
+						
+		
+			
+			<span><a href="/">Justus Thies</a>&emsp;</span>
+						
+		
+						
+			<span><a href="https://ps.is.mpg.de/~black" target="_blank" rel="noopener noreferrer">Michael J. Black</a>&emsp;</span>
+						
+		
+						
+			<span><a href="" target="_blank" rel="noopener noreferrer">Xue Bin Peng</a>&emsp;</span>
+						
+		
+						
+			<span><a href="" target="_blank" rel="noopener noreferrer">Davis Rempe</a>&emsp;</span>
+						
+		
+
+		<div class="page-tag">
+          
+            <a href="/tags#ECCV" class="tag">ECCV</a>
+          
+        </div>
+      </header>
+	  
+	  
+	    <div class="page-cover-image">
+		  <figure>
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="TeSMo - Generating Human Interaction Motions in Scenes with Text Control">-->
+			<img class="page-image" src=teaser.jpg alt="TeSMo - Generating Human Interaction Motions in Scenes with Text Control">
+			
+		  </figure>
+		</div> <!-- End Page Cover Image -->
+	  
+	  
+      <p>We present TeSMo, a method for text-controlled scene-aware motion generation based on denoising diffusion models. Previous text-to-motion methods focus on characters in isolation without considering scenes due to the limited availability of datasets that include motion, text descriptions, and interactive scenes. Our approach begins with pre-training a scene-agnostic text-to-motion diffusion model, emphasizing goal-reaching constraints on large-scale motion-capture datasets. We then enhance this model with a scene-aware component, fine-tuned using data augmented with detailed scene information, including ground plane and object shapes. To facilitate training, we embed annotated navigation and interaction motions within scenes. The proposed method produces realistic and diverse human-object interactions, such as navigation and sitting, in different scenes with various object shapes, orientations, initial body positions, and poses. Extensive experiments demonstrate that our approach surpasses prior techniques in terms of the plausibility of human-scene interactions, as well as the realism and variety of the generated motions.</p>
+
+<p><a href="https://research.nvidia.com/labs/toronto-ai/tesmo/">Project page</a></p>
+
+	  
+	  
+		
+			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2404.10685" target="_blank">[Paper]</a>&nbsp;</span>
+			
+		
+			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=_3e5LRh9jVc" target="_blank">[Video]</a>&nbsp;</span>
+		
+		
+			<span class="post-paper-bibtex"><a href="/posts/tesmo/yi2024tesmo.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
+			
+	  
+
+		
+		<iframe width="898" height="505" src=https://www.youtube-nocookie.com/embed/_3e5LRh9jVc frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="page-cover-image">
+		</div> <!-- End Page Cover Image -->
+		
+	  
+      <div class="page-footer">
+        <!-- <div class="page-share"> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=TeSMo - Generating Human Interaction Motions in Scenes with Text Control&url=https://justusthies.github.io/posts/tesmo/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/tesmo/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/tesmo/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+        <!-- </div> -->
+        <!--<div class="page-tag">
+          
+            <a href="/tags#ECCV" class="tag">&#35; ECCV</a>
+          
+        </div>-->
+      </div>
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+
+</body>
+</html>
