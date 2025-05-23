@@ -2,26 +2,26 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<!-- <title>D3GA - Drivable 3D Gaussian Avatars - Graphics & Vision</title> -->
-	<title>D3GA - Drivable 3D Gaussian Avatars</title>
+	<!-- <title>Reasonable Artificial Intelligence - Graphics & Vision</title> -->
+	<title>Reasonable Artificial Intelligence</title>
 
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Graphics & Vision" property="og:site_name">
   
-    <meta content="D3GA - Drivable 3D Gaussian Avatars" property="og:title">
+    <meta content="Reasonable Artificial Intelligence" property="og:title">
   
   
     <meta content="article" property="og:type">
   
   
-    <meta content="We present Drivable 3D Gaussian Avatars (D3GA), the first 3D controllable model for human bodies rendered with Gaussian splats." property="og:description">
+    <meta content="The “Reasonable Artificial Intelligence” project receives funding as a Cluster of Excellence." property="og:description">
   
   
-    <meta content="https://justusthies.github.io/posts/dega/" property="og:url">
+    <meta content="https://justusthies.github.io/posts/rai/" property="og:url">
   
   
-    <meta content="2024-11-01T09:00:00+01:00" property="article:published_time">
+    <meta content="2025-05-23T11:00:00+02:00" property="article:published_time">
     <meta content="https://justusthies.github.io/about/" property="article:author">
   
   
@@ -29,12 +29,12 @@
   
   
     
-    <meta content="publication" property="article:section">
+    <meta content="highlight" property="article:section">
     
   
   
     
-    <meta content="3DV" property="article:tag">
+    <meta content="RAI" property="article:tag">
     
   
 
@@ -42,19 +42,19 @@
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@JustusThies">
   
-    <meta name="twitter:title" content="D3GA - Drivable 3D Gaussian Avatars">
+    <meta name="twitter:title" content="Reasonable Artificial Intelligence">
   
   
-    <meta name="twitter:url" content="https://justusthies.github.io/posts/dega/">
+    <meta name="twitter:url" content="https://justusthies.github.io/posts/rai/">
   
   
-    <meta name="twitter:description" content="We present Drivable 3D Gaussian Avatars (D3GA), the first 3D controllable model for human bodies rendered with Gaussian splats.">
+    <meta name="twitter:description" content="The “Reasonable Artificial Intelligence” project receives funding as a Cluster of Excellence.">
   
   
     <meta name="twitter:image:src" content="https://justusthies.github.io/assets/img/teaser.jpg">
   
 
-	<meta name="description" content="We present Drivable 3D Gaussian Avatars (D3GA), the first 3D controllable model for human bodies rendered with Gaussian splats.">
+	<meta name="description" content="The “Reasonable Artificial Intelligence” project receives funding as a Cluster of Excellence.">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta property="og:image" content="">
@@ -147,38 +147,14 @@
     <div class="wrap-content">
       <header class="header-page">
 		
-			<h1 class="page-title">D3GA&#58; Drivable 3D Gaussian Avatars</h1>
+			<h1 class="page-title">Reasonable Artificial Intelligence</h1>
 			
-        <div class="page-date"><span>2024, Nov 01&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-		
-						
-			<span><a href="https://zielon.github.io/" target="_blank" rel="noopener noreferrer">Wojciech Zielonka</a>&emsp;</span>
-						
-		
-						
-			<span><a href="https://openreview.net/profile?id=~Timur_Bagautdinov1" target="_blank" rel="noopener noreferrer">Timur Bagautdinov</a>&emsp;</span>
-						
-		
-						
-			<span><a href="https://shunsukesaito.github.io/" target="_blank" rel="noopener noreferrer">Shunsuke Saito</a>&emsp;</span>
-						
-		
-						
-			<span><a href="https://zollhoefer.com" target="_blank" rel="noopener noreferrer">Michael Zollhöfer</a>&emsp;</span>
-						
-		
-						
-			<span><a href="/" target="_blank" rel="noopener noreferrer">Justus Thies</a>&emsp;</span>
-						
-		
-						
-			<span><a href="https://openreview.net/profile?id=~Javier_Romero1" target="_blank" rel="noopener noreferrer">Javier Romero</a>&emsp;</span>
-						
+        <div class="page-date"><span>2025, May 23&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
 		
 
 		<div class="page-tag">
           
-            <a href="/tags#3DV" class="tag">3DV</a>
+            <a href="/tags#RAI" class="tag">RAI</a>
           
         </div>
       </header>
@@ -186,43 +162,43 @@
 	  
 	    <div class="page-cover-image">
 		  <figure>
-			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="D3GA - Drivable 3D Gaussian Avatars">-->
-			<img class="page-image" src=teaser.jpg alt="D3GA - Drivable 3D Gaussian Avatars">
+			<!--<img class="page-image" src=/assets/img/teaser.jpg alt="Reasonable Artificial Intelligence">-->
+			<img class="page-image" src=teaser.jpg alt="Reasonable Artificial Intelligence">
 			
 		  </figure>
 		</div> <!-- End Page Cover Image -->
 	  
 	  
-      <p>We present Drivable 3D Gaussian Avatars (D3GA), the first 3D controllable model for human bodies rendered with Gaussian splats. Current photorealistic drivable avatars require either accurate 3D registrations during training, dense input images during testing, or both. The ones based on neural radiance fields also tend to be prohibitively slow for telepresence applications. This work uses the recently presented 3D Gaussian Splatting (3DGS) technique to render realistic humans at real-time framerates, using dense calibrated multi-view videos as input. To deform those primitives, we depart from the commonly used point deformation method of linear blend skinning (LBS) and use a classic volumetric deformation method: cage deformations. Given their smaller size, we drive these deformations with joint angles and keypoints, which are more suitable for communication applications. Our experiments on nine subjects with varied body shapes, clothes, and motions obtain higher-quality results than state-of-the-art methods when using the same training and test data.</p>
+      <p>The researchers in the new Cluster of Excellence “Reasonable Artificial Intelligence” (RAI) , which is headed by TU Darmstadt with participation by hessian.AI, are carrying out research into a new generation of artificial intelligence that can learn in “more reasonable” ways. The project was selected for funding in a multi-stage competition within the Excellence Strategy from the German federal and state governments. This coveted funding once again acknowledges the outstanding research and long-standing expertise in the field of artificial intelligence for which TU Darmstadt has been renowned for many years.</p>
+
+<p>Although deep learning (DL) has enabled important advances in the field of artificial intelligence (AI) over the last ten years, current AI systems have displayed some significant weaknesses, such as an inability to reason, difficulty handling new situations and a need for continuous adjustments. Last but not least, current AI systems also require substantial resources. Therefore, the new Reasonable Artificial Intelligence (RAI) Cluster of Excellence aims to develop the next generation of reasonable AI.</p>
+
+<p><a href="https://hessian.ai/reasonable-and-safe-the-future-of-artificial-intelligence/">TUDa News</a></p>
 
 	  
 	  
-		
-			<span class="post-paper-link"><a href="https://arxiv.org/pdf/2311.08581" target="_blank">[Paper]</a>&nbsp;</span>
 			
 		
-			<span class="post-video-link"><a href="https://www.youtube.com/watch?v=C4IT1gnkaF0" target="_blank">[Video]</a>&nbsp;</span>
+			
+					
+			
 		
-		
-			<span class="post-paper-bibtex"><a href="/posts/dega/zielonka2024dega.bib" target="_blank">[Bibtex]</a>&nbsp;</span>
 			
 	  
 
 		
-		<iframe width="898" height="505" src=https://www.youtube-nocookie.com/embed/C4IT1gnkaF0 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		<div class="page-cover-image">
-		</div> <!-- End Page Cover Image -->
+			
 		
 	  
       <div class="page-footer">
         <!-- <div class="page-share"> -->
-          <!-- <a href="https://twitter.com/intent/tweet?text=D3GA - Drivable 3D Gaussian Avatars&url=https://justusthies.github.io/posts/dega/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
-          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/dega/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
-          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/dega/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
+          <!-- <a href="https://twitter.com/intent/tweet?text=Reasonable Artificial Intelligence&url=https://justusthies.github.io/posts/rai/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a> -->
+          <!-- <a href="https://facebook.com/sharer.php?u=https://justusthies.github.io/posts/rai/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a> -->
+          <!-- <a href="https://plus.google.com/share?url=https://justusthies.github.io/posts/rai/" title="Share on Google+" rel="nofollow" target="_blank">Google+</a> -->
         <!-- </div> -->
         <!--<div class="page-tag">
           
-            <a href="/tags#3DV" class="tag">&#35; 3DV</a>
+            <a href="/tags#RAI" class="tag">&#35; RAI</a>
           
         </div>-->
       </div>
